@@ -1,0 +1,50 @@
+---
+title: "Insurance Cost Analysis"
+author: "Bilal"
+format: html
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+# Syfte
+
+Syftet med denna analys är att undersöka vilka faktorer som verkar hänga ihop med försäkringskostnader (`charges`) och att utvärdera om en regressionsmodell kan användas som stöd för framtida prissättning.
+
+# Data
+
+Datasetet innehåller 1100 observationer och 14 ursprungliga variabler. Exempel på variabler är ålder, kön, region, BMI, antal barn, rökning, kronisk sjukdom, motionsnivå, försäkringsplan, tidigare olyckor, tidigare claims, hälsokontroller och försäkringskostnad.
+
+I den inledande datagranskningen identifierades saknade värden i bland annat BMI, motionsnivå och antal hälsokontroller. Datat innehöll även vissa inkonsekvenser i kategoriska variabler, vilket behövde städas innan analysen.
+
+# Metod
+
+Analysen genomfördes i flera steg:
+
+- inläsning och granskning av data
+- datastädning och hantering av saknade värden
+- skapande av nya variabler
+- beskrivande statistik och visualiseringar
+- regressionsanalys med två modellvarianter
+
+Saknade värden i `bmi` och `annual_checkups` ersattes med medianvärden. Saknade värden i `exercise_level` ersattes med kategorin `unknown`. Kategoriska variabler standardiserades till konsekventa nivåer.
+
+Två nya variabler skapades:
+- `bmi_category`
+- `age_group`
+
+Dessa variabler skapades för att göra analysen mer lättolkad och för att bättre kunna beskriva skillnader mellan grupper.
+
+# Resultat från beskrivande analys
+
+```{r}
+source(here::here("scripts", "00_setup.R"))
+
+charges_summary <- readr::read_csv(here::here("output", "tables", "charges_summary.csv"), show_col_types = FALSE)
+charges_by_smoker <- readr::read_csv(here::here("output", "tables", "charges_by_smoker.csv"), show_col_types = FALSE)
+charges_by_plan <- readr::read_csv(here::here("output", "tables", "charges_by_plan.csv"), show_col_types = FALSE)
+
+charges_summary
+charges_by_smoker
+charges_by_plan

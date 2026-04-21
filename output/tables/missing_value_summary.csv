@@ -1,0 +1,15 @@
+column,missing_count,missing_percent
+bmi,28,2.55
+exercise_level,22,2
+annual_checkups,20,1.82
+customer_id,0,0
+age,0,0
+sex,0,0
+region,0,0
+children,0,0
+smoker,0,0
+chronic_condition,0,0
+plan_type,0,0
+prior_accidents,0,0
+prior_claims,0,0
+charges,0,0

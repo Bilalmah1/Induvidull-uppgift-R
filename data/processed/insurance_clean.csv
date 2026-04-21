@@ -1,0 +1,1101 @@
+customer_id,age,sex,region,bmi,children,smoker,chronic_condition,exercise_level,plan_type,prior_accidents,prior_claims,annual_checkups,charges,bmi_category,age_group
+c100000,48,female,east,24.8,0,no,no,high,basic,0,0,1,6439.1,Normal weight,45-59
+c100001,40,male,west,29.5,1,no,no,medium,basic,0,1,4,8274.06,Overweight,30-44
+c100002,50,female,south,18.3,2,no,no,high,standard,0,0,3,5190.99,Underweight,45-59
+c100003,62,male,north,25.5,5,yes,no,medium,basic,0,0,2,14500.35,Overweight,60+
+c100004,39,female,east,27.3,2,no,no,medium,basic,0,1,0,6534.4,Overweight,30-44
+c100005,39,female,west,23.3,4,no,no,high,standard,0,0,2,8026.39,Normal weight,30-44
+c100006,63,female,east,23.9,3,no,no,high,basic,0,0,1,8770.46,Normal weight,60+
+c100007,52,male,north,24.8,2,no,no,medium,basic,0,0,2,6926.29,Normal weight,45-59
+c100008,36,female,east,28.6,0,no,yes,low,basic,0,1,3,14105.25,Overweight,30-44
+c100009,49,male,west,26.9,2,yes,no,medium,standard,1,0,2,11702.8,Overweight,45-59
+c100010,36,male,east,17.2,2,no,no,high,standard,0,0,3,6429.21,Underweight,30-44
+c100011,36,female,west,17.8,2,no,yes,high,basic,1,1,3,12158.24,Underweight,30-44
+c100012,45,male,west,24.9,1,no,no,high,premium,0,0,4,8101.27,Normal weight,45-59
+c100013,18,female,east,28.8,1,no,no,low,standard,0,1,4,4971.48,Overweight,18-29
+c100014,20,male,north,17,1,no,no,medium,basic,0,3,2,10151.02,Underweight,18-29
+c100015,35,female,south,25,1,yes,no,medium,basic,0,0,1,14385.41,Overweight,30-44
+c100016,29,male,north,27.5,0,no,no,high,standard,0,0,2,5028.62,Overweight,18-29
+c100017,46,male,south,33.9,3,no,no,low,standard,0,0,1,9154.14,Obese,45-59
+c100018,30,male,south,25.4,0,no,no,high,basic,0,0,3,8088,Overweight,30-44
+c100019,24,male,north,28.7,0,no,no,medium,basic,0,1,2,6700.67,Overweight,18-29
+c100020,61,female,south,28.7,1,no,no,low,premium,0,1,1,10434.98,Overweight,60+
+c100021,39,male,north,17.8,2,no,no,medium,basic,1,0,1,4687.54,Underweight,30-44
+c100022,43,male,west,31,1,no,yes,medium,standard,1,0,2,13185.63,Obese,30-44
+c100023,23,male,west,27.9,0,no,yes,medium,premium,1,0,4,13039.91,Overweight,18-29
+c100024,35,female,north,29.6,2,no,no,low,standard,0,0,2,7100.7,Overweight,30-44
+c100025,43,male,west,44,1,yes,no,low,standard,0,0,3,18363.38,Obese,30-44
+c100026,27,male,south,17.7,4,no,no,high,standard,0,0,2,9139.42,Underweight,18-29
+c100027,47,male,south,27.5,4,no,yes,low,basic,1,0,3,11085.38,Overweight,45-59
+c100028,34,female,north,26,1,no,no,low,standard,1,0,2,11480.03,Overweight,30-44
+c100029,38,male,south,28.7,1,yes,yes,medium,standard,0,0,3,9286.86,Overweight,30-44
+c100030,34,female,west,27.1,2,no,no,medium,standard,0,0,0,3573.72,Overweight,30-44
+c100031,66,male,east,26.3,0,no,yes,medium,premium,0,0,2,12952.95,Overweight,60+
+c100032,42,female,north,24.9,1,no,yes,medium,premium,0,0,2,8772.99,Normal weight,30-44
+c100033,28,male,north,28.6,1,yes,no,medium,premium,3,1,1,19282.83,Overweight,18-29
+c100034,53,male,south,21,4,no,no,medium,standard,0,0,4,5846.21,Normal weight,45-59
+c100035,26,female,south,30.4,0,no,no,low,standard,0,0,1,8833.96,Obese,18-29
+c100036,45,male,north,25.7,2,no,no,low,standard,0,0,1,8905.44,Overweight,45-59
+c100037,18,female,south,21.7,3,no,no,medium,standard,1,2,2,6915.34,Normal weight,18-29
+c100038,25,male,west,25,1,no,no,medium,premium,0,0,3,11753.13,Overweight,18-29
+c100039,45,male,west,33.2,0,yes,yes,medium,basic,0,0,2,19542.61,Obese,45-59
+c100040,52,male,south,25.4,5,no,no,medium,premium,0,0,3,8290.1,Overweight,45-59
+c100041,44,male,west,29.2,1,no,no,medium,standard,0,1,3,6165.67,Overweight,30-44
+c100042,40,male,south,24.2,2,no,no,low,premium,1,0,1,9774.17,Normal weight,30-44
+c100043,38,female,south,30.8,0,no,yes,low,premium,0,1,2,13249.4,Obese,30-44
+c100044,23,female,north,30,1,no,no,medium,basic,0,0,2,2697.95,Obese,18-29
+c100045,33,male,east,35.5,1,no,no,medium,basic,0,0,3,5799.75,Obese,30-44
+c100046,36,male,west,26.5,0,no,no,medium,basic,0,1,0,7023.81,Overweight,30-44
+c100047,56,male,east,30.9,0,no,yes,low,standard,0,3,2,15454.77,Obese,45-59
+c100048,46,male,south,28.1,3,no,yes,medium,standard,1,0,3,10551.98,Overweight,45-59
+c100049,19,female,east,32.6,0,yes,no,medium,standard,0,0,2,16839.09,Obese,18-29
+c100050,46,male,north,24.4,0,no,yes,low,premium,0,0,2,10022.95,Normal weight,45-59
+c100051,37,female,west,30.7,1,no,no,medium,standard,0,1,2,6266.42,Obese,30-44
+c100052,33,male,south,26.4,3,no,no,high,basic,0,0,1,5356.82,Overweight,30-44
+c100053,50,female,south,27.5,0,no,no,medium,basic,0,0,2,8048.75,Overweight,45-59
+c100054,55,female,east,28.3,2,no,no,medium,basic,0,0,2,7330.91,Overweight,45-59
+c100055,54,female,east,29,0,no,no,low,standard,0,0,4,7894.72,Overweight,45-59
+c100056,31,female,north,26.6,0,no,no,medium,standard,1,0,1,7007.84,Overweight,30-44
+c100057,38,male,east,27.5,0,no,yes,low,basic,0,0,4,11615.93,Overweight,30-44
+c100058,46,female,south,34.7,3,no,yes,high,standard,0,0,3,12533.88,Obese,45-59
+c100059,55,female,east,32.3,0,yes,no,medium,basic,1,1,0,19104.17,Obese,45-59
+c100060,36,female,west,31.2,0,no,yes,medium,standard,1,1,3,11488.84,Obese,30-44
+c100061,40,female,west,25.4,1,no,no,medium,standard,0,0,0,6054.03,Overweight,30-44
+c100062,28,female,east,23.1,3,no,no,medium,standard,0,0,4,4399.84,Normal weight,18-29
+c100063,26,female,south,31.3,0,yes,no,low,standard,0,0,3,32559.28,Obese,18-29
+c100064,53,male,north,31.8,1,no,no,high,premium,0,0,1,7726.06,Obese,45-59
+c100065,60,male,west,34.7,0,no,no,high,basic,0,0,1,7134.77,Obese,60+
+c100066,41,male,south,24.8,1,no,yes,medium,standard,1,0,2,10705.79,Normal weight,30-44
+c100067,55,female,south,26.9,2,no,no,high,standard,0,0,2,7719.49,Overweight,45-59
+c100068,47,female,south,20.3,2,yes,yes,medium,standard,0,0,2,18460.49,Normal weight,45-59
+c100069,34,male,north,25.5,1,no,no,medium,premium,0,0,1,7947.33,Overweight,30-44
+c100070,47,male,east,32.1,1,no,yes,medium,standard,0,1,3,10437.85,Obese,45-59
+c100071,62,female,north,26,0,yes,no,low,standard,0,0,1,16761.41,Overweight,60+
+c100072,42,female,east,30.4,1,no,no,low,basic,2,0,3,10000.4,Obese,30-44
+c100073,62,female,south,27.2,0,no,no,low,standard,1,1,3,10412.34,Overweight,60+
+c100074,18,female,north,28.2,3,no,no,medium,basic,0,1,2,8893.8,Overweight,18-29
+c100075,53,female,south,22.7,5,no,yes,medium,basic,0,1,4,9437.22,Normal weight,45-59
+c100076,43,male,north,27.9,5,no,no,medium,standard,0,1,1,4650.85,Overweight,30-44
+c100077,38,male,north,17,3,no,no,high,standard,0,0,0,4275.09,Underweight,30-44
+c100078,43,male,east,26.7,2,no,no,medium,basic,0,0,2,8896.3,Overweight,30-44
+c100079,18,male,north,19.4,2,no,no,medium,standard,0,0,2,3824.22,Normal weight,18-29
+c100080,39,male,west,32.8,0,no,yes,low,standard,0,1,2,11359.27,Obese,30-44
+c100081,47,male,north,31.1,2,no,no,low,basic,1,1,4,9212.7,Obese,45-59
+c100082,61,male,south,30.2,1,no,yes,medium,standard,0,1,4,16074.81,Obese,60+
+c100083,35,female,east,34.1,1,no,no,medium,standard,0,2,2,8608.88,Obese,30-44
+c100084,31,female,south,22.9,3,no,no,high,standard,0,1,2,7379.66,Normal weight,30-44
+c100085,35,female,north,35.2,0,no,no,low,standard,0,0,0,7745.49,Obese,30-44
+c100086,54,male,south,32.1,1,no,yes,medium,standard,1,1,1,14683.06,Obese,45-59
+c100087,46,male,south,26.6,4,no,no,low,standard,1,1,3,10773.57,Overweight,45-59
+c100088,35,female,west,32.4,0,no,no,low,premium,0,0,2,9219.75,Obese,30-44
+c100089,49,male,south,22.7,1,no,no,low,standard,3,0,2,11180.7,Normal weight,45-59
+c100090,43,female,west,23.8,4,no,yes,low,basic,2,3,2,13590.17,Normal weight,30-44
+c100091,55,male,west,25.2,2,no,yes,medium,standard,0,0,3,8820.24,Overweight,45-59
+c100092,33,female,south,24.8,2,no,no,low,premium,0,0,1,8261.01,Normal weight,30-44
+c100093,38,female,west,22.6,0,yes,no,high,basic,1,0,2,10389.67,Normal weight,30-44
+c100094,37,female,south,32.9,1,no,yes,low,premium,0,0,1,14399.52,Obese,30-44
+c100095,23,female,west,25.8,3,no,no,low,premium,0,0,0,7077.32,Overweight,18-29
+c100096,46,female,north,29.2,2,no,yes,low,basic,0,0,2,13247.07,Overweight,45-59
+c100097,45,female,east,25,1,yes,no,medium,premium,0,0,1,13996.44,Overweight,45-59
+c100098,42,male,south,19.3,0,no,no,low,standard,0,0,3,7528.82,Normal weight,30-44
+c100099,39,male,south,28.6,0,no,no,high,premium,1,0,0,5988.27,Overweight,30-44
+c100100,24,female,east,18.4,5,no,no,high,standard,0,1,1,3086.11,Underweight,18-29
+c100101,37,male,east,27,1,yes,yes,low,standard,0,0,2,16934.54,Overweight,30-44
+c100102,38,male,north,21.2,2,no,yes,medium,standard,0,1,2,12186.74,Normal weight,30-44
+c100103,32,female,north,36.1,0,no,no,low,standard,0,0,0,6885.25,Obese,30-44
+c100104,40,female,east,31.5,2,yes,no,medium,basic,0,0,0,19596.39,Obese,30-44
+c100105,47,female,east,28.1,4,yes,no,medium,standard,0,0,4,9656.61,Overweight,45-59
+c100106,67,female,west,33.9,2,yes,no,low,basic,1,1,3,23932,Obese,60+
+c100107,44,male,west,23.8,0,no,no,low,standard,0,0,2,6960,Normal weight,30-44
+c100108,45,female,west,30,2,no,no,medium,standard,0,0,2,7961.43,Obese,45-59
+c100109,41,male,east,28.4,3,no,no,medium,standard,0,0,1,4914.12,Overweight,30-44
+c100110,18,male,south,28,1,no,no,low,basic,0,1,2,7361.5,Overweight,18-29
+c100111,42,female,north,33.2,3,no,no,medium,basic,1,0,2,7089.26,Obese,30-44
+c100112,43,male,west,30.8,2,no,no,medium,basic,0,0,3,4187.76,Obese,30-44
+c100113,74,female,east,29.8,4,no,no,high,basic,0,0,1,5945.59,Overweight,60+
+c100114,39,male,north,20,2,no,no,low,standard,0,0,3,4133.36,Normal weight,30-44
+c100115,46,female,south,23.3,0,no,no,high,premium,1,1,1,9877.34,Normal weight,45-59
+c100116,42,male,west,26.9,1,no,no,medium,basic,0,0,1,5715.09,Overweight,30-44
+c100117,27,male,south,27.5,0,no,yes,low,premium,0,1,0,9110.39,Overweight,18-29
+c100118,57,female,south,22.9,4,no,no,medium,standard,0,0,1,8190.29,Normal weight,45-59
+c100119,52,male,south,38.7,3,no,no,medium,standard,0,0,4,5993.13,Obese,45-59
+c100120,52,male,north,34.6,2,no,yes,high,standard,0,2,2,15249.89,Obese,45-59
+c100121,30,male,south,29.8,1,no,no,low,standard,0,0,0,16621.26,Overweight,30-44
+c100122,60,male,south,28.4,0,no,no,medium,basic,0,1,4,5176.81,Overweight,60+
+c100123,24,male,north,26,3,no,no,medium,standard,0,0,3,7418.66,Overweight,18-29
+c100124,50,female,west,23.5,1,yes,yes,high,standard,0,2,3,18882.87,Normal weight,45-59
+c100125,70,female,south,28.7,0,no,no,medium,standard,1,0,4,8722.03,Overweight,60+
+c100126,29,male,west,28.3,2,no,no,high,premium,0,0,1,5376.6,Overweight,18-29
+c100127,35,female,north,21.7,0,yes,no,high,basic,2,0,3,14712.61,Normal weight,30-44
+c100128,43,male,north,29,1,no,no,medium,standard,0,1,3,7243.55,Overweight,30-44
+c100129,35,male,east,26.6,1,yes,no,medium,standard,0,1,3,8967.32,Overweight,30-44
+c100130,22,female,south,18.3,0,yes,no,high,standard,0,0,3,14845.51,Underweight,18-29
+c100131,43,female,west,23.7,5,no,no,low,standard,0,0,2,7894.49,Normal weight,30-44
+c100132,28,male,north,25.2,0,yes,no,medium,standard,0,0,3,12955.11,Overweight,18-29
+c100133,48,female,east,36.2,0,no,no,medium,premium,1,0,1,9732.15,Obese,45-59
+c100134,30,male,east,29.6,0,no,no,medium,standard,0,0,1,5790.16,Overweight,30-44
+c100135,62,female,south,22.1,3,no,no,low,premium,0,0,1,13153.82,Normal weight,60+
+c100136,32,male,north,29.4,1,no,no,low,standard,0,0,4,7457.1,Overweight,30-44
+c100137,38,female,east,20.4,2,yes,no,low,basic,0,0,1,13405.95,Normal weight,30-44
+c100138,53,male,east,32.7,0,no,yes,medium,basic,0,0,2,8331.25,Obese,45-59
+c100139,26,female,south,24.9,0,no,no,low,basic,0,0,2,4593.84,Normal weight,18-29
+c100140,45,male,east,27.2,1,no,yes,high,standard,0,0,4,9797.16,Overweight,45-59
+c100141,59,female,south,34,3,no,yes,medium,standard,1,1,2,17771.99,Obese,45-59
+c100142,21,male,east,21.1,4,no,no,low,standard,1,0,3,5684.06,Normal weight,18-29
+c100143,44,male,north,21.3,0,no,no,medium,standard,0,0,3,8611.39,Normal weight,30-44
+c100144,45,female,west,25,1,yes,no,medium,basic,0,0,2,12796.12,Overweight,45-59
+c100145,52,female,south,32.5,4,no,yes,high,basic,0,1,2,13185.26,Obese,45-59
+c100146,26,female,south,20.2,1,yes,no,low,basic,0,0,3,11766.44,Normal weight,18-29
+c100147,25,male,north,17,3,no,no,low,standard,0,0,4,2911.02,Underweight,18-29
+c100148,49,male,north,25.7,0,no,no,high,basic,0,1,3,10335.08,Overweight,45-59
+c100149,46,male,south,30.1,4,no,no,high,basic,0,0,1,5072.54,Obese,45-59
+c100150,45,female,south,33,3,no,no,medium,premium,1,0,3,12280.81,Obese,45-59
+c100151,47,female,west,25.6,4,no,no,high,standard,0,0,2,5301.27,Overweight,45-59
+c100152,33,male,north,25.4,2,yes,yes,low,basic,0,2,3,18983.19,Overweight,30-44
+c100153,45,female,south,32.8,1,no,no,medium,standard,0,0,3,5740.73,Obese,45-59
+c100154,46,male,south,19.2,4,yes,yes,low,standard,0,1,1,20077.94,Normal weight,45-59
+c100155,33,female,north,25.5,0,no,no,low,standard,0,0,3,6097.38,Overweight,30-44
+c100156,66,male,north,29.1,1,no,no,high,standard,0,0,3,6856.41,Overweight,60+
+c100157,48,female,south,29.7,2,no,yes,low,basic,1,0,4,16900.42,Overweight,45-59
+c100158,27,female,south,24.8,3,yes,no,medium,standard,0,0,1,12407.58,Normal weight,18-29
+c100159,51,male,south,27.9,4,no,no,high,standard,0,0,2,6871.35,Overweight,45-59
+c100160,29,male,east,17,0,yes,no,low,basic,0,0,3,13666.12,Underweight,18-29
+c100161,52,male,east,24.8,3,yes,yes,high,standard,1,1,0,17574.29,Normal weight,45-59
+c100162,57,female,north,30,2,no,yes,high,standard,0,0,1,13634.49,Obese,45-59
+c100163,31,female,south,22.7,0,no,no,medium,standard,0,0,4,6767.27,Normal weight,30-44
+c100164,55,male,west,28.2,1,no,no,low,basic,0,0,1,9855.16,Overweight,45-59
+c100165,47,male,south,29.7,0,no,no,medium,standard,0,0,4,11722.11,Overweight,45-59
+c100166,53,female,east,26.3,1,no,yes,medium,basic,0,0,1,8888,Overweight,45-59
+c100167,67,female,south,29,5,no,no,low,standard,0,0,2,13154.3,Overweight,60+
+c100168,39,female,west,23.1,2,no,no,medium,basic,0,0,3,6904.89,Normal weight,30-44
+c100169,32,male,west,26.3,2,no,no,high,basic,0,1,3,6946.87,Overweight,30-44
+c100170,30,female,south,29.9,5,no,no,low,standard,1,1,2,10310.33,Overweight,30-44
+c100171,31,female,west,27.9,1,no,no,medium,standard,0,1,2,9955.65,Overweight,30-44
+c100172,41,female,north,24.8,3,no,no,low,standard,0,0,3,6329.54,Normal weight,30-44
+c100173,46,female,north,28.6,1,no,no,medium,standard,0,0,1,8141.87,Overweight,45-59
+c100174,46,female,west,30.8,3,no,yes,high,basic,0,0,2,12476.41,Obese,45-59
+c100175,53,male,west,18.6,0,no,no,medium,standard,0,0,1,5745.52,Normal weight,45-59
+c100176,42,female,north,32.7,4,no,no,low,standard,0,0,2,10062.75,Obese,30-44
+c100177,61,male,south,26.6,0,no,no,medium,basic,0,0,1,7109.1,Overweight,60+
+c100178,39,female,north,29.3,1,no,no,medium,premium,0,0,1,5409.37,Overweight,30-44
+c100179,75,male,south,33.9,3,no,no,medium,basic,0,0,2,6879.18,Obese,60+
+c100180,50,male,west,21.6,1,no,no,medium,premium,0,0,0,8098.64,Normal weight,45-59
+c100181,31,male,south,24,2,yes,no,low,premium,0,0,0,16373.91,Normal weight,30-44
+c100182,28,male,south,25.8,1,no,no,high,standard,0,0,3,1534.57,Overweight,18-29
+c100183,48,female,south,24.2,3,no,yes,unknown,premium,0,0,2,11876.9,Normal weight,45-59
+c100184,39,female,north,35.2,0,no,yes,medium,standard,0,1,4,12742.44,Obese,30-44
+c100185,51,male,south,23.9,0,no,no,high,basic,0,0,3,3961.68,Normal weight,45-59
+c100186,48,male,east,25.2,0,no,yes,medium,standard,0,0,0,8232.84,Overweight,45-59
+c100187,41,male,west,28.4,1,no,no,medium,basic,0,0,2,6698.97,Overweight,30-44
+c100188,31,male,west,21.8,0,no,no,low,standard,0,0,0,7561.71,Normal weight,30-44
+c100189,22,male,north,25.1,1,no,no,medium,standard,0,0,3,7764.7,Overweight,18-29
+c100190,36,female,west,27.5,1,no,no,medium,standard,0,0,4,5270.23,Overweight,30-44
+c100191,53,female,west,26.3,0,no,no,low,basic,0,0,2,7343.73,Overweight,45-59
+c100192,45,male,west,27.2,2,yes,yes,medium,standard,0,0,3,20088.05,Overweight,45-59
+c100193,26,male,south,24.6,4,no,no,high,premium,0,0,1,5300.23,Normal weight,18-29
+c100194,44,female,south,20.7,0,no,no,medium,basic,0,0,2,7846.43,Normal weight,30-44
+c100195,47,male,south,29.1,2,no,no,medium,standard,0,0,3,11955.73,Overweight,45-59
+c100196,31,female,north,35.1,2,no,no,high,basic,0,0,1,7467.4,Obese,30-44
+c100197,44,male,north,27.6,1,no,no,low,standard,0,0,1,9168.36,Overweight,30-44
+c100198,43,female,south,28.5,2,no,yes,medium,basic,0,0,2,11952.1,Overweight,30-44
+c100199,27,female,south,27.5,1,no,no,high,standard,0,0,3,6559.46,Overweight,18-29
+c100200,47,male,east,21.9,1,no,yes,medium,standard,0,0,2,10479.88,Normal weight,45-59
+c100201,49,female,south,35.4,0,no,no,low,basic,1,0,4,9633.83,Obese,45-59
+c100202,56,male,north,28.8,2,no,yes,low,premium,1,0,1,17676.13,Overweight,45-59
+c100203,56,male,west,35.3,2,no,yes,high,basic,1,1,2,15464.74,Obese,45-59
+c100204,24,male,west,23.7,0,no,no,medium,standard,0,0,3,2149.82,Normal weight,18-29
+c100205,30,female,west,35.3,1,no,yes,high,basic,0,0,2,9844.91,Obese,30-44
+c100206,49,female,west,31.2,5,no,no,unknown,basic,0,0,2,4507.34,Obese,45-59
+c100207,49,female,east,30.2,1,no,yes,medium,standard,0,1,1,12733.66,Obese,45-59
+c100208,49,male,west,28.8,1,no,yes,high,standard,0,0,1,9445.43,Overweight,45-59
+c100209,75,male,north,27.4,4,yes,no,medium,basic,0,0,1,18543.01,Overweight,60+
+c100210,49,male,south,33.1,2,no,no,medium,standard,0,0,4,8675.38,Obese,45-59
+c100211,57,male,north,28.6,2,no,no,medium,standard,0,1,2,11853.64,Overweight,45-59
+c100212,54,male,north,19,3,no,no,high,standard,1,1,3,7297.76,Normal weight,45-59
+c100213,50,male,north,22.7,3,yes,yes,medium,standard,0,0,2,17964.16,Normal weight,45-59
+c100214,38,female,east,26.5,1,no,no,medium,standard,0,0,2,4908.88,Overweight,30-44
+c100215,52,male,west,29.2,1,no,yes,low,basic,0,0,2,12758.51,Overweight,45-59
+c100216,32,female,east,26.9,1,no,no,high,basic,0,0,4,2446.13,Overweight,30-44
+c100217,39,male,north,32.9,5,no,no,low,basic,0,0,3,7696.86,Obese,30-44
+c100218,36,male,west,18.5,2,no,no,medium,basic,0,0,3,2535.25,Normal weight,30-44
+c100219,43,male,east,28.2,0,no,no,medium,basic,0,1,0,7614.72,Overweight,30-44
+c100220,72,female,south,20.2,3,yes,no,medium,standard,1,0,2,20240.99,Normal weight,60+
+c100221,18,female,east,30.2,1,yes,no,unknown,standard,2,0,2,18910.33,Obese,18-29
+c100222,51,female,south,27.3,0,no,no,low,premium,0,0,4,10277.21,Overweight,45-59
+c100223,21,female,south,28.8,2,no,no,medium,basic,0,0,1,1203.51,Overweight,18-29
+c100224,36,female,west,23.4,1,yes,yes,medium,standard,1,1,2,17360.58,Normal weight,30-44
+c100225,56,male,south,33.7,3,no,yes,medium,premium,0,0,2,16062.25,Obese,45-59
+c100226,43,male,south,32.2,0,no,no,low,standard,0,0,1,8114.17,Obese,30-44
+c100227,28,female,west,29.7,3,no,no,high,basic,0,0,1,8365.81,Overweight,18-29
+c100228,33,female,east,26.6,2,no,no,medium,basic,0,1,3,5704.43,Overweight,30-44
+c100229,51,female,north,30.4,0,no,no,high,basic,0,0,2,8498.22,Obese,45-59
+c100230,33,male,north,24,5,no,no,medium,basic,0,0,3,5647.29,Normal weight,30-44
+c100231,45,male,north,31.4,1,no,no,medium,standard,1,1,3,9191.07,Obese,45-59
+c100232,43,male,east,35,0,no,no,high,basic,0,0,1,5065,Obese,30-44
+c100233,34,female,south,32.1,1,no,no,high,basic,0,0,2,4761.6,Obese,30-44
+c100234,70,male,north,25.1,3,no,no,medium,standard,0,0,1,10603.34,Overweight,60+
+c100235,50,male,west,27.5,1,yes,no,low,standard,0,0,4,14627.72,Overweight,45-59
+c100236,18,female,south,21,0,no,no,medium,standard,1,0,2,7885.55,Normal weight,18-29
+c100237,44,male,south,27.5,0,no,yes,unknown,standard,0,1,2,10133.83,Overweight,30-44
+c100238,33,female,south,29.3,0,yes,no,low,standard,0,0,1,12692.48,Overweight,30-44
+c100239,53,male,east,19.4,3,yes,no,low,basic,0,1,2,15695.43,Normal weight,45-59
+c100240,32,female,north,22,1,no,no,high,standard,1,0,1,4190.22,Normal weight,30-44
+c100241,41,male,south,26.2,0,no,no,low,standard,0,0,2,6635.37,Overweight,30-44
+c100242,49,male,west,26.4,0,no,no,medium,premium,0,0,3,5214.35,Overweight,45-59
+c100243,53,male,south,22.4,1,yes,yes,low,basic,0,0,3,17174.51,Normal weight,45-59
+c100244,26,male,east,28.8,4,yes,no,medium,standard,0,2,1,14588.23,Overweight,18-29
+c100245,38,female,south,28.5,1,yes,no,low,basic,0,0,2,14652.15,Overweight,30-44
+c100246,36,female,north,26.4,5,no,no,medium,standard,0,0,3,8616.18,Overweight,30-44
+c100247,34,female,north,23.9,1,no,yes,high,basic,1,1,1,9553.28,Normal weight,30-44
+c100248,65,female,south,32.9,0,no,no,medium,standard,1,0,4,15155.61,Obese,60+
+c100249,47,male,north,35.1,4,no,no,low,standard,0,0,1,10010.7,Obese,45-59
+c100250,26,female,north,24.8,1,no,no,medium,standard,0,0,3,2510.74,Normal weight,18-29
+c100251,54,male,west,25.1,2,no,no,medium,premium,0,0,2,7604.54,Overweight,45-59
+c100252,70,male,west,30.6,5,no,no,high,standard,1,0,2,9648.87,Obese,60+
+c100253,55,male,west,26.3,0,no,no,high,basic,0,0,3,5024.83,Overweight,45-59
+c100254,22,female,west,26.3,0,no,no,medium,standard,0,0,1,4860.92,Overweight,18-29
+c100255,36,male,south,30.6,2,no,no,medium,premium,0,0,2,7991.73,Obese,30-44
+c100256,58,male,west,19.4,0,no,yes,high,premium,2,0,3,16198.81,Normal weight,45-59
+c100257,33,female,north,33.2,0,no,no,low,standard,0,0,3,4492.15,Obese,30-44
+c100258,48,male,west,28,0,no,no,medium,standard,0,0,1,9109.38,Overweight,45-59
+c100259,52,male,west,25.9,0,no,no,high,premium,0,0,3,5860.06,Overweight,45-59
+c100260,30,female,east,26.7,3,yes,no,medium,standard,1,1,2,14185.27,Overweight,30-44
+c100261,41,female,west,27.3,0,no,yes,medium,standard,0,0,1,14679.03,Overweight,30-44
+c100262,18,female,east,19,1,no,yes,medium,basic,0,0,3,9198.68,Normal weight,18-29
+c100263,29,female,south,33.8,2,no,no,low,standard,0,1,0,8013,Obese,18-29
+c100264,39,female,south,27.5,1,no,no,medium,standard,0,1,2,9966.66,Overweight,30-44
+c100265,26,female,east,29,0,yes,no,medium,standard,0,1,0,16409.47,Overweight,18-29
+c100266,63,female,north,32.4,3,no,no,low,premium,1,0,2,13691.01,Obese,60+
+c100267,23,female,east,22.3,0,yes,no,medium,basic,0,0,2,12162.85,Normal weight,18-29
+c100268,36,male,west,27.5,3,no,yes,high,standard,0,1,3,12219.29,Overweight,30-44
+c100269,44,male,north,26.4,4,yes,yes,low,premium,0,0,2,22472.72,Overweight,30-44
+c100270,61,male,west,31.9,1,no,no,medium,standard,1,0,2,10549.47,Obese,60+
+c100271,23,female,west,17.4,1,yes,no,medium,basic,0,0,1,15603.22,Underweight,18-29
+c100272,57,female,north,27.5,1,no,no,medium,basic,0,0,2,9442.8,Overweight,45-59
+c100273,42,female,west,24.8,1,no,no,low,standard,0,1,4,9637.02,Normal weight,30-44
+c100274,29,female,south,29.1,4,no,no,medium,standard,0,0,3,4695.13,Overweight,18-29
+c100275,48,female,west,27.5,4,yes,no,high,standard,0,0,1,13799.95,Overweight,45-59
+c100276,45,male,east,24.4,1,no,no,medium,basic,0,0,0,3581.28,Normal weight,45-59
+c100277,34,female,north,24.1,2,no,no,unknown,premium,0,1,4,2967.58,Normal weight,30-44
+c100278,43,male,south,27,4,yes,yes,high,standard,1,0,2,16905.36,Overweight,30-44
+c100279,37,male,east,23.3,5,no,yes,low,basic,0,0,2,9916.06,Normal weight,30-44
+c100280,43,female,south,31.3,1,no,no,low,standard,0,0,3,8266.51,Obese,30-44
+c100281,51,female,east,26.1,1,no,no,high,standard,0,0,2,3681.23,Overweight,45-59
+c100282,63,male,east,17,0,no,no,high,basic,1,1,2,3122.16,Underweight,60+
+c100283,26,female,north,25.3,4,yes,no,low,basic,0,0,4,16526.86,Overweight,18-29
+c100284,70,female,east,23.7,0,no,no,low,basic,0,0,2,7888.48,Normal weight,60+
+c100285,18,male,west,19.4,2,no,yes,low,standard,0,1,1,12189.76,Normal weight,18-29
+c100286,40,female,south,21.9,0,yes,no,high,standard,0,0,1,14760.55,Normal weight,30-44
+c100287,50,male,north,28.2,0,no,no,low,standard,0,0,1,8757.86,Overweight,45-59
+c100288,46,male,north,33.6,1,no,no,medium,standard,0,0,3,7389.57,Obese,45-59
+c100289,34,female,south,28.7,5,no,no,high,standard,0,0,1,5954.18,Overweight,30-44
+c100290,39,female,west,24.7,0,no,no,low,basic,1,1,0,9520.55,Normal weight,30-44
+c100291,36,female,north,29.4,2,no,no,medium,premium,0,1,4,8100.24,Overweight,30-44
+c100292,34,female,east,25.2,0,yes,no,low,standard,0,0,2,12307.68,Overweight,30-44
+c100293,53,female,north,27.5,0,no,no,high,basic,1,0,0,2411.23,Overweight,45-59
+c100294,47,male,south,22.5,1,no,no,medium,basic,0,0,1,5290.68,Normal weight,45-59
+c100295,33,female,west,19.3,1,no,no,medium,basic,0,0,1,6525.37,Normal weight,30-44
+c100296,54,female,east,26.1,0,no,yes,medium,basic,0,0,2,12485.15,Overweight,45-59
+c100297,46,male,north,28.3,1,yes,yes,low,standard,0,0,4,18061.38,Overweight,45-59
+c100298,53,male,south,27.4,0,yes,yes,low,standard,0,0,4,17147.88,Overweight,45-59
+c100299,50,male,north,25.9,1,no,no,medium,standard,0,1,2,8915.59,Overweight,45-59
+c100300,31,female,south,27.5,5,no,no,medium,standard,0,0,2,5625.42,Overweight,30-44
+c100301,35,male,east,30,4,no,no,high,standard,0,0,2,7584.16,Obese,30-44
+c100302,52,male,north,21.9,1,no,no,high,standard,0,0,1,3006.98,Normal weight,45-59
+c100303,50,female,south,31.2,2,no,no,medium,basic,0,0,0,10630.89,Obese,45-59
+c100304,42,female,south,23,4,no,no,unknown,standard,0,0,4,10865.46,Normal weight,30-44
+c100305,44,male,west,24.2,0,no,no,medium,standard,0,0,1,8171.86,Normal weight,30-44
+c100306,59,female,west,21.4,3,no,yes,high,basic,0,0,1,10001.61,Normal weight,45-59
+c100307,34,female,north,25,4,no,yes,medium,basic,0,0,2,8523.42,Overweight,30-44
+c100308,49,female,west,32.1,0,no,no,low,premium,1,0,2,12509.82,Obese,45-59
+c100309,39,female,south,29.7,0,no,no,medium,standard,0,1,0,8650.92,Overweight,30-44
+c100310,39,male,south,31.8,5,no,yes,medium,standard,0,0,1,14265.74,Obese,30-44
+c100311,56,male,east,30.3,1,no,yes,medium,standard,0,1,2,12235.85,Obese,45-59
+c100312,53,male,west,22.9,0,yes,no,medium,standard,2,1,3,16135.34,Normal weight,45-59
+c100313,53,female,west,26.3,0,no,no,low,basic,0,0,1,9818.7,Overweight,45-59
+c100314,59,female,east,24.5,1,no,no,medium,basic,0,1,2,6347.82,Normal weight,45-59
+c100315,42,female,south,33.5,2,no,no,low,premium,0,0,2,11425.7,Obese,30-44
+c100316,51,female,west,22.4,2,yes,no,low,standard,0,0,3,14118.97,Normal weight,45-59
+c100317,38,female,south,31.4,5,yes,no,low,basic,1,1,1,16831.71,Obese,30-44
+c100318,46,male,east,31.6,0,no,no,low,standard,0,0,1,4915.96,Obese,45-59
+c100319,40,female,south,35.7,1,no,no,medium,standard,0,1,2,10505.67,Obese,30-44
+c100320,43,male,east,25.7,1,yes,no,medium,basic,1,1,3,15296.63,Overweight,30-44
+c100321,50,female,south,30.9,1,no,no,medium,basic,1,1,1,11377.81,Obese,45-59
+c100322,31,female,north,37.4,0,no,yes,medium,basic,0,0,2,11099.55,Obese,30-44
+c100323,69,female,west,25.5,5,no,no,low,premium,2,1,0,6842.84,Overweight,60+
+c100324,29,male,north,20.2,3,no,no,low,basic,0,0,0,6966.19,Normal weight,18-29
+c100325,26,male,south,18.6,1,no,no,high,standard,0,0,2,1623.2,Normal weight,18-29
+c100326,57,male,north,31.2,2,no,no,medium,premium,0,0,1,5443.72,Obese,45-59
+c100327,52,female,north,19.3,0,no,no,medium,basic,0,1,3,2733.09,Normal weight,45-59
+c100328,50,female,north,26.1,2,yes,yes,low,premium,1,1,3,17994.48,Overweight,45-59
+c100329,50,male,north,29.7,2,no,no,medium,premium,0,0,2,10829.1,Overweight,45-59
+c100330,42,female,west,28.3,1,no,no,medium,premium,0,0,2,6676.03,Overweight,30-44
+c100331,30,male,south,29.1,5,no,no,medium,basic,0,0,2,3080.68,Overweight,30-44
+c100332,43,female,west,28.5,2,no,no,medium,standard,0,0,0,7935.05,Overweight,30-44
+c100333,33,female,east,33,1,no,yes,low,premium,0,0,4,9754.95,Obese,30-44
+c100334,55,female,south,23.6,3,yes,no,low,premium,0,1,4,18617.53,Normal weight,45-59
+c100335,40,female,east,24.4,0,no,yes,high,basic,0,0,1,12565.04,Normal weight,30-44
+c100336,31,male,south,23.7,1,no,no,high,standard,0,2,1,6172.22,Normal weight,30-44
+c100337,38,female,east,31.1,1,yes,no,low,basic,0,0,1,20528.56,Obese,30-44
+c100338,47,female,south,31.7,1,no,yes,medium,basic,1,0,3,15060.08,Obese,45-59
+c100339,35,female,south,29.3,3,yes,no,low,standard,1,0,2,16902.06,Overweight,30-44
+c100340,31,female,west,32.5,1,no,yes,low,premium,0,0,4,16125.27,Obese,30-44
+c100341,45,male,west,22.3,3,yes,yes,low,standard,0,1,3,18426.35,Normal weight,45-59
+c100342,45,male,west,35.1,2,no,no,low,standard,0,0,2,4859.59,Obese,45-59
+c100343,35,male,south,34.1,1,no,no,medium,premium,1,0,2,6969.22,Obese,30-44
+c100344,36,male,west,30.6,3,no,no,medium,standard,0,0,3,5855.76,Obese,30-44
+c100345,45,female,south,35.6,0,no,no,low,standard,0,0,2,9697.14,Obese,45-59
+c100346,23,male,south,19.5,0,no,no,low,basic,0,0,2,3490.1,Normal weight,18-29
+c100347,24,female,north,24.6,1,no,no,high,standard,0,0,3,3371.35,Normal weight,18-29
+c100348,33,female,east,23.9,0,no,yes,low,standard,0,0,2,7369.8,Normal weight,30-44
+c100349,39,male,north,30.7,0,no,yes,medium,premium,0,1,3,11936.55,Obese,30-44
+c100350,46,female,south,22.9,2,no,no,medium,standard,0,0,2,8841.67,Normal weight,45-59
+c100351,61,male,west,31.5,1,no,no,medium,standard,0,0,3,12036.36,Obese,60+
+c100352,53,female,north,34,1,yes,no,low,basic,1,1,2,18821.51,Obese,45-59
+c100353,40,male,north,30.6,5,no,no,low,premium,0,0,2,9496.5,Obese,30-44
+c100354,42,male,north,28.8,2,no,no,low,standard,0,0,3,7739.68,Overweight,30-44
+c100355,29,male,west,22.7,3,no,yes,low,basic,0,0,2,8941.89,Normal weight,18-29
+c100356,42,male,south,23.7,0,no,yes,medium,basic,0,1,2,11745.6,Normal weight,30-44
+c100357,38,male,south,33,2,no,no,medium,standard,0,0,0,6599.89,Obese,30-44
+c100358,46,female,west,31.1,3,no,no,low,basic,1,0,2,11173.41,Obese,45-59
+c100359,31,male,west,27,2,no,no,low,basic,0,0,2,7583.81,Overweight,30-44
+c100360,49,female,south,27.5,2,yes,yes,medium,standard,1,0,4,18219.33,Overweight,45-59
+c100361,62,male,east,19,1,no,no,medium,standard,1,0,2,5503.11,Normal weight,60+
+c100362,41,male,west,22.7,0,no,no,high,premium,0,0,2,6554.35,Normal weight,30-44
+c100363,47,male,east,36.3,1,no,yes,medium,standard,0,0,1,13474.39,Obese,45-59
+c100364,51,female,north,22,1,no,no,medium,standard,0,0,0,10899.23,Normal weight,45-59
+c100365,37,female,west,28.2,3,no,no,medium,premium,0,1,3,12061.45,Overweight,30-44
+c100366,45,male,east,32.1,0,no,no,high,standard,1,0,1,6663.76,Obese,45-59
+c100367,42,female,south,21.9,5,no,yes,high,basic,0,1,3,11417.35,Normal weight,30-44
+c100368,43,female,south,28.4,4,no,no,medium,standard,0,0,3,5005.48,Overweight,30-44
+c100369,32,female,north,31.4,0,no,no,low,standard,0,0,2,8058.87,Obese,30-44
+c100370,42,male,north,27.6,1,no,no,medium,standard,0,0,3,9046.55,Overweight,30-44
+c100371,48,male,west,40.6,4,no,no,medium,standard,1,2,2,14774.97,Obese,45-59
+c100372,61,female,north,20.6,5,no,yes,medium,premium,0,1,2,14676.14,Normal weight,60+
+c100373,54,female,south,32.6,1,yes,no,medium,basic,0,1,4,18481.52,Obese,45-59
+c100374,70,female,south,27.6,1,yes,yes,low,premium,1,1,4,22864.9,Overweight,60+
+c100375,32,male,north,30.7,1,no,no,medium,standard,0,0,1,6172.49,Obese,30-44
+c100376,53,male,west,27.5,2,no,no,high,basic,0,0,0,3991.67,Overweight,45-59
+c100377,44,female,north,24.3,0,no,yes,medium,premium,1,0,1,10771.69,Normal weight,30-44
+c100378,70,female,south,29.4,2,yes,no,medium,basic,0,0,1,13795.14,Overweight,60+
+c100379,31,female,south,18.8,0,no,no,medium,standard,0,0,4,2919.97,Normal weight,30-44
+c100380,31,male,north,29.9,0,no,no,high,premium,0,1,2,9538.39,Overweight,30-44
+c100381,34,male,north,28.6,1,no,no,high,standard,0,0,2,6901.98,Overweight,30-44
+c100382,18,female,east,29.7,1,yes,no,medium,standard,0,1,3,14873.54,Overweight,18-29
+c100383,35,female,west,32.1,1,no,no,medium,standard,0,1,2,7801.55,Obese,30-44
+c100384,32,female,north,28.9,1,yes,no,high,standard,0,0,2,14595.33,Overweight,30-44
+c100385,44,male,east,28.2,1,no,no,medium,standard,1,0,4,9099.56,Overweight,30-44
+c100386,46,female,east,23.7,0,no,no,medium,standard,1,0,3,8021.64,Normal weight,45-59
+c100387,66,male,west,25,1,no,no,medium,standard,0,0,3,5684.12,Overweight,60+
+c100388,54,male,south,33.2,5,no,yes,low,standard,0,0,2,8660.29,Obese,45-59
+c100389,35,female,south,33.8,1,no,no,medium,basic,0,0,3,4713.15,Obese,30-44
+c100390,30,female,south,26.1,1,no,no,high,standard,1,0,1,6461.6,Overweight,30-44
+c100391,48,female,east,27.9,2,yes,no,medium,standard,2,0,2,17696.38,Overweight,45-59
+c100392,25,male,west,22.9,5,no,no,medium,standard,1,0,4,6685.44,Normal weight,18-29
+c100393,66,male,north,33.5,0,yes,no,low,standard,2,1,2,24103.65,Obese,60+
+c100394,57,male,south,30.9,2,no,no,medium,standard,1,0,3,8476.39,Obese,45-59
+c100395,36,male,west,36.1,2,yes,no,low,standard,0,0,2,20684.78,Obese,30-44
+c100396,20,female,west,22.9,2,yes,no,low,standard,0,2,0,8295.14,Normal weight,18-29
+c100397,60,male,west,26.3,0,yes,no,medium,premium,0,1,3,16066.11,Overweight,60+
+c100398,41,male,east,28.5,2,yes,no,low,basic,0,1,1,13349.75,Overweight,30-44
+c100399,58,female,south,30.9,0,no,no,medium,premium,1,0,2,10983.67,Obese,45-59
+c100400,21,male,east,25.9,2,no,no,medium,basic,0,0,0,5785.5,Overweight,18-29
+c100401,34,male,east,23.3,2,no,yes,high,basic,0,0,4,6304.9,Normal weight,30-44
+c100402,42,male,north,31.5,0,no,no,medium,premium,0,0,1,7869.98,Obese,30-44
+c100403,43,male,east,30.8,3,yes,no,low,basic,1,0,1,21794.64,Obese,30-44
+c100404,36,male,east,23.2,0,no,yes,low,standard,1,1,1,10923.32,Normal weight,30-44
+c100405,50,male,north,33.8,3,no,yes,medium,premium,0,0,4,13019.65,Obese,45-59
+c100406,28,female,west,32.3,1,no,no,medium,premium,1,0,3,8331.15,Obese,18-29
+c100407,40,female,east,28,0,no,no,medium,premium,0,0,3,9021.32,Overweight,30-44
+c100408,44,male,west,27.9,0,yes,no,medium,basic,0,0,2,16194.07,Overweight,30-44
+c100409,49,female,north,30.2,4,no,no,low,standard,1,0,2,10301.95,Obese,45-59
+c100410,51,female,south,23.9,0,no,yes,medium,basic,0,0,1,7370.79,Normal weight,45-59
+c100411,27,female,east,27.2,0,no,no,medium,standard,0,0,2,9406.39,Overweight,18-29
+c100412,22,female,south,17.2,1,no,no,low,premium,0,0,2,7437.53,Underweight,18-29
+c100413,59,male,east,32,2,no,yes,low,standard,0,1,4,15207.67,Obese,45-59
+c100414,46,male,east,20.6,2,no,no,low,standard,0,1,3,10038.67,Normal weight,45-59
+c100415,32,female,north,34,0,no,no,low,standard,0,0,2,6489.28,Obese,30-44
+c100416,62,female,south,26.6,0,no,yes,medium,standard,0,1,1,17555.17,Overweight,60+
+c100417,44,female,south,26.6,0,no,yes,low,premium,0,0,3,13618.49,Overweight,30-44
+c100418,57,male,south,25.1,0,no,yes,low,basic,0,0,1,14125.6,Overweight,45-59
+c100419,43,male,west,26.2,1,no,no,low,standard,2,0,1,14863.29,Overweight,30-44
+c100420,69,female,west,34.7,2,no,no,high,premium,0,1,1,10810.44,Obese,60+
+c100421,65,male,east,17,0,no,no,high,standard,1,1,2,8075.75,Underweight,60+
+c100422,39,male,east,33.2,1,no,no,low,basic,0,0,3,6500.17,Obese,30-44
+c100423,55,male,south,29.4,1,no,no,medium,standard,0,0,1,7486.74,Overweight,45-59
+c100424,50,male,west,22.3,5,no,no,low,standard,0,0,0,5987.3,Normal weight,45-59
+c100425,60,female,east,23.2,4,yes,no,medium,basic,2,2,2,17110.09,Normal weight,60+
+c100426,29,male,east,34.7,3,no,yes,low,premium,0,2,3,19120.57,Obese,18-29
+c100427,51,female,west,23.5,0,no,no,medium,standard,0,0,1,13531.94,Normal weight,45-59
+c100428,56,male,south,22.7,0,no,no,medium,premium,0,0,1,7315.88,Normal weight,45-59
+c100429,19,male,west,31.9,1,no,no,high,standard,0,0,4,5508.74,Obese,18-29
+c100430,27,male,north,28.6,0,no,no,low,standard,0,0,4,5868.77,Overweight,18-29
+c100431,18,male,south,22.6,1,no,no,high,basic,0,0,4,6288.9,Normal weight,18-29
+c100432,38,female,south,28.4,3,no,no,high,standard,1,0,3,8251.96,Overweight,30-44
+c100433,51,male,west,23.2,3,no,no,low,basic,0,0,1,9884.11,Normal weight,45-59
+c100434,62,male,west,33.1,3,no,no,low,premium,0,0,1,10406.17,Obese,60+
+c100435,43,male,east,32.3,1,no,no,low,basic,0,0,2,8145.1,Obese,30-44
+c100436,63,female,east,30.5,2,no,no,low,basic,0,1,2,7936.81,Obese,60+
+c100437,24,female,east,28.6,1,no,no,medium,standard,0,0,4,4820.57,Overweight,18-29
+c100438,20,female,west,34.8,0,no,no,medium,basic,0,0,3,2363.75,Obese,18-29
+c100439,41,male,south,27.5,2,yes,no,medium,basic,2,0,3,11566.59,Overweight,30-44
+c100440,47,male,west,22.3,0,no,no,high,standard,0,0,1,7089.39,Normal weight,45-59
+c100441,42,female,north,29.5,1,no,no,low,basic,0,0,4,3776.06,Overweight,30-44
+c100442,18,female,west,36.2,1,yes,no,high,basic,0,0,3,15898.22,Obese,18-29
+c100443,41,male,east,22.9,2,no,no,low,standard,0,0,1,5718.6,Normal weight,30-44
+c100444,25,male,south,25.4,3,no,yes,high,standard,1,1,4,12549.23,Overweight,18-29
+c100445,51,male,south,29.6,1,no,yes,medium,standard,0,0,2,8130.65,Overweight,45-59
+c100446,47,male,west,27.4,3,yes,no,low,standard,0,0,0,16892.55,Overweight,45-59
+c100447,30,female,north,22.7,0,yes,no,high,standard,1,0,3,13927.19,Normal weight,30-44
+c100448,35,female,east,32.3,1,no,no,low,standard,0,0,2,9195.38,Obese,30-44
+c100449,28,male,west,37.5,2,no,no,medium,premium,0,0,0,10591.21,Obese,18-29
+c100450,41,male,south,28.4,2,no,yes,unknown,basic,0,0,2,9896.02,Overweight,30-44
+c100451,54,male,north,23.8,5,no,no,medium,standard,0,0,4,2573.47,Normal weight,45-59
+c100452,29,male,east,20.1,0,no,no,medium,premium,0,1,3,8276.52,Normal weight,18-29
+c100453,49,male,west,28.9,2,no,no,medium,standard,1,0,3,8914.75,Overweight,45-59
+c100454,35,female,east,32.3,2,no,no,low,basic,1,0,1,7265.3,Obese,30-44
+c100455,32,female,west,29.3,4,no,no,medium,basic,1,1,0,6134.65,Overweight,30-44
+c100456,41,female,north,27.5,0,no,yes,high,standard,0,0,2,9395.42,Overweight,30-44
+c100457,29,female,south,24.5,3,no,no,low,basic,0,0,1,9107.85,Normal weight,18-29
+c100458,35,male,east,22.4,2,no,no,low,standard,0,0,1,4987.56,Normal weight,30-44
+c100459,26,male,west,30.8,0,yes,no,medium,standard,0,0,1,15050.62,Obese,18-29
+c100460,68,female,north,32.4,1,no,no,medium,standard,0,0,2,6528.52,Obese,60+
+c100461,42,female,west,20.5,1,no,no,medium,basic,0,0,1,4887.28,Normal weight,30-44
+c100462,33,male,east,34.4,2,no,no,low,standard,0,0,3,10681.84,Obese,30-44
+c100463,45,female,south,30.2,4,no,no,medium,standard,0,0,1,12051.45,Obese,45-59
+c100464,41,male,north,33.8,2,yes,no,low,premium,0,0,2,21726.92,Obese,30-44
+c100465,39,male,west,21.4,2,no,no,medium,basic,0,1,0,4302.41,Normal weight,30-44
+c100466,50,male,north,21.6,1,no,no,high,basic,0,0,2,3896.45,Normal weight,45-59
+c100467,52,female,south,27.1,0,no,no,low,standard,0,0,2,10132.52,Overweight,45-59
+c100468,35,female,south,29.6,0,yes,no,medium,basic,1,2,4,13473.4,Overweight,30-44
+c100469,35,male,west,35.4,1,no,no,high,standard,0,0,3,6523.39,Obese,30-44
+c100470,38,male,east,30.6,1,no,yes,medium,premium,0,0,2,14830.85,Obese,30-44
+c100471,18,female,west,25.7,0,no,yes,high,standard,0,0,1,7108.48,Overweight,18-29
+c100472,22,male,north,22.3,1,no,no,medium,premium,0,1,2,7912.16,Normal weight,18-29
+c100473,60,female,east,33.6,1,no,no,medium,basic,0,1,3,10546.64,Obese,60+
+c100474,63,male,east,23.8,0,yes,no,low,basic,0,1,1,12808.23,Normal weight,60+
+c100475,39,female,west,34.7,1,no,no,low,basic,0,1,2,9513.36,Obese,30-44
+c100476,49,male,west,26.4,0,yes,yes,low,standard,0,0,3,21227.68,Overweight,45-59
+c100477,46,female,north,34.8,4,no,no,medium,premium,0,0,3,8263.57,Obese,45-59
+c100478,75,female,east,31.5,3,no,yes,medium,basic,1,0,3,12860.61,Obese,60+
+c100479,57,female,north,27.3,2,no,no,medium,standard,0,0,3,8120.54,Overweight,45-59
+c100480,40,female,east,25.1,0,no,yes,medium,standard,1,1,4,11952.55,Overweight,30-44
+c100481,30,male,south,25.6,3,no,no,medium,premium,0,0,2,7075.12,Overweight,30-44
+c100482,21,male,south,28.8,3,no,no,medium,basic,0,0,2,5174.53,Overweight,18-29
+c100483,45,female,south,27.9,3,no,no,medium,basic,0,0,3,3081.86,Overweight,45-59
+c100484,32,female,east,24.5,0,no,no,medium,basic,0,0,3,6227.49,Normal weight,30-44
+c100485,24,male,south,26.2,2,no,no,medium,standard,0,0,4,8454.02,Overweight,18-29
+c100486,34,male,east,27.6,3,no,no,low,basic,0,0,0,4779.62,Overweight,30-44
+c100487,28,male,south,17.5,2,no,no,high,premium,1,0,2,5618.58,Underweight,18-29
+c100488,64,female,north,27.5,2,no,yes,low,standard,3,0,2,18949.07,Overweight,60+
+c100489,53,female,west,27.5,1,no,no,low,standard,1,0,1,13810.49,Overweight,45-59
+c100490,42,male,south,22.3,1,no,no,high,standard,0,0,1,7058.41,Normal weight,30-44
+c100491,61,female,south,20.5,0,no,yes,low,basic,0,0,3,12307.34,Normal weight,60+
+c100492,43,male,east,19.5,2,no,yes,medium,standard,0,0,1,9200.98,Normal weight,30-44
+c100493,31,female,south,21.1,0,no,no,medium,premium,0,0,3,8715.66,Normal weight,30-44
+c100494,62,male,north,24.9,1,no,no,medium,premium,1,0,3,8106.15,Normal weight,60+
+c100495,49,female,south,36.5,0,no,no,low,premium,0,0,1,11371.46,Obese,45-59
+c100496,29,male,west,24.7,2,no,no,medium,standard,0,0,1,3409.43,Normal weight,18-29
+c100497,40,female,east,28.2,0,no,yes,unknown,basic,0,0,3,11952.45,Overweight,30-44
+c100498,31,male,east,29,2,no,yes,medium,basic,0,0,3,8773.16,Overweight,30-44
+c100499,24,female,east,27.5,3,no,no,medium,basic,0,0,3,5701.34,Overweight,18-29
+c100500,54,male,north,27.5,0,no,yes,high,standard,1,0,4,11329.88,Overweight,45-59
+c100501,67,male,south,22.9,0,no,no,low,basic,0,0,4,9048.95,Normal weight,60+
+c100502,24,male,east,33.5,0,yes,no,medium,standard,0,0,2,17143.53,Obese,18-29
+c100503,49,male,north,35.8,3,no,yes,medium,standard,0,0,4,15930.01,Obese,45-59
+c100504,34,male,south,19.7,1,no,no,high,premium,0,1,3,9762.63,Normal weight,30-44
+c100505,36,male,south,22.7,1,no,yes,unknown,standard,1,0,4,9105.23,Normal weight,30-44
+c100506,34,female,south,26,0,no,no,medium,premium,0,0,2,7406.05,Overweight,30-44
+c100507,31,male,west,22.8,2,no,yes,high,basic,0,0,4,8811.16,Normal weight,30-44
+c100508,43,female,north,29.8,3,no,no,low,basic,0,0,2,7447.93,Overweight,30-44
+c100509,31,female,south,23.9,3,yes,no,high,standard,0,0,3,14391.24,Normal weight,30-44
+c100510,46,female,north,37.4,2,no,no,low,basic,0,1,1,10970.84,Obese,45-59
+c100511,41,female,west,32.8,0,no,no,medium,basic,0,0,2,6459.72,Obese,30-44
+c100512,39,male,north,28.4,0,yes,yes,high,standard,1,0,2,19147.89,Overweight,30-44
+c100513,30,male,south,31.8,0,yes,no,medium,basic,1,0,1,11970.05,Obese,30-44
+c100514,35,male,east,32.3,0,no,no,medium,standard,1,0,1,9899.96,Obese,30-44
+c100515,52,male,east,25.3,0,yes,no,low,standard,0,0,3,16207.45,Overweight,45-59
+c100516,49,female,south,24,0,no,yes,high,standard,1,1,0,9930.52,Normal weight,45-59
+c100517,29,female,south,27.5,1,yes,no,medium,standard,0,1,1,14504.11,Overweight,18-29
+c100518,43,female,south,31.4,4,no,yes,low,standard,0,1,1,9963.74,Obese,30-44
+c100519,52,female,south,28.4,2,no,no,medium,basic,1,1,2,7174.93,Overweight,45-59
+c100520,20,female,north,19.7,3,no,no,medium,basic,0,0,1,5574.52,Normal weight,18-29
+c100521,49,female,south,24.1,2,no,no,low,standard,0,0,1,7960.23,Normal weight,45-59
+c100522,33,male,south,26.9,0,no,no,low,standard,1,1,2,8583.89,Overweight,30-44
+c100523,49,male,south,27.4,2,no,no,low,standard,0,0,2,8231.42,Overweight,45-59
+c100524,32,male,east,36.1,0,no,no,medium,standard,0,0,1,6578.23,Obese,30-44
+c100525,19,male,west,20.6,2,no,no,medium,basic,0,1,1,6150.71,Normal weight,18-29
+c100526,21,male,east,29.1,1,no,no,medium,standard,0,0,1,4145.61,Overweight,18-29
+c100527,43,female,west,34.2,5,no,yes,medium,standard,0,0,4,12913.24,Obese,30-44
+c100528,45,male,north,37.8,0,no,no,high,standard,0,0,2,5175.72,Obese,45-59
+c100529,30,male,west,25.3,0,no,no,medium,standard,0,0,2,7801.23,Overweight,30-44
+c100530,50,female,south,30,4,yes,no,low,standard,0,0,1,16176.08,Obese,45-59
+c100531,20,female,north,29.4,0,no,no,medium,standard,0,0,2,5154.06,Overweight,18-29
+c100532,41,male,east,28.3,2,no,no,medium,standard,0,0,0,6163.66,Overweight,30-44
+c100533,26,female,east,26.6,2,no,no,medium,basic,0,0,0,4681.22,Overweight,18-29
+c100534,34,male,east,29.2,3,no,yes,medium,standard,0,1,2,9466.14,Overweight,30-44
+c100535,43,male,north,17,5,no,no,medium,basic,1,1,2,8010.71,Underweight,30-44
+c100536,31,female,north,30.2,5,no,no,high,basic,0,0,1,7115.96,Obese,30-44
+c100537,37,female,west,27.9,0,no,no,low,premium,0,0,3,6086.89,Overweight,30-44
+c100538,55,female,south,26.9,3,no,yes,medium,premium,0,0,4,10852.8,Overweight,45-59
+c100539,35,female,east,36.5,2,no,no,low,basic,2,2,2,11790.04,Obese,30-44
+c100540,53,female,east,24.8,2,no,no,high,standard,0,1,2,5983.22,Normal weight,45-59
+c100541,27,male,east,25.2,0,yes,yes,low,basic,0,0,4,15701.08,Overweight,18-29
+c100542,49,female,south,36.7,2,no,no,low,standard,0,0,3,12310.13,Obese,45-59
+c100543,61,male,south,24.3,5,no,no,medium,premium,0,0,2,7377,Normal weight,60+
+c100544,18,female,east,24.3,4,no,no,medium,premium,0,0,3,2069.18,Normal weight,18-29
+c100545,32,male,west,26.5,1,no,no,low,standard,0,0,1,6826.53,Overweight,30-44
+c100546,50,female,west,31.5,0,no,no,medium,standard,0,0,2,7536.21,Obese,45-59
+c100547,39,female,north,28.3,1,no,yes,medium,standard,0,0,2,9357.92,Overweight,30-44
+c100548,47,male,north,21.8,3,yes,no,low,standard,0,0,1,14406.65,Normal weight,45-59
+c100549,34,male,west,24.9,2,no,yes,medium,premium,0,0,2,9341.61,Normal weight,30-44
+c100550,43,female,east,24.8,1,no,no,high,premium,0,0,2,4673.19,Normal weight,30-44
+c100551,40,male,west,27.1,0,no,no,medium,standard,0,0,3,4851.23,Overweight,30-44
+c100552,57,female,south,29.9,1,no,no,medium,standard,0,0,2,8660.82,Overweight,45-59
+c100553,45,female,east,29.5,1,no,no,medium,basic,0,0,2,9923.28,Overweight,45-59
+c100554,46,female,east,19.6,4,no,yes,medium,basic,0,0,1,13023.42,Normal weight,45-59
+c100555,37,female,east,32.1,2,no,no,low,standard,0,0,1,5169.43,Obese,30-44
+c100556,36,male,south,28.5,1,no,no,medium,standard,1,3,2,7176.08,Overweight,30-44
+c100557,36,female,north,33.6,1,no,yes,high,standard,0,0,4,9919.43,Obese,30-44
+c100558,47,female,east,29.6,0,no,no,unknown,standard,0,0,1,9780.22,Overweight,45-59
+c100559,37,male,south,32.3,5,no,no,medium,standard,1,0,1,10427.21,Obese,30-44
+c100560,46,male,south,29.7,1,no,no,low,basic,0,1,3,8593.07,Overweight,45-59
+c100561,69,female,west,27.5,1,no,yes,low,premium,1,0,1,17018.98,Overweight,60+
+c100562,53,male,south,30.2,1,no,no,medium,premium,0,0,3,11043.38,Obese,45-59
+c100563,38,female,west,26.9,2,no,yes,medium,premium,0,0,2,11233.5,Overweight,30-44
+c100564,58,male,north,38.2,2,no,yes,low,standard,0,0,2,18944.5,Obese,45-59
+c100565,37,male,west,31.4,2,no,no,high,basic,0,0,2,3103.97,Obese,30-44
+c100566,18,male,west,29.4,0,no,yes,medium,standard,0,2,2,11897.39,Overweight,18-29
+c100567,29,female,north,21.4,1,no,yes,high,standard,0,0,2,6905.41,Normal weight,18-29
+c100568,18,female,north,21,0,no,no,high,basic,0,0,4,3750.43,Normal weight,18-29
+c100569,37,female,south,28.7,2,no,no,high,standard,0,0,3,6603.24,Overweight,30-44
+c100570,42,female,north,28.2,0,no,yes,medium,standard,0,1,3,11877.59,Overweight,30-44
+c100571,64,female,east,25.4,2,no,yes,medium,premium,1,1,3,17273.92,Overweight,60+
+c100572,46,male,west,28.3,3,yes,no,medium,basic,0,0,1,19114.05,Overweight,45-59
+c100573,39,female,south,34.6,4,no,no,medium,standard,0,0,2,11215.13,Obese,30-44
+c100574,53,female,south,31,1,no,no,medium,standard,0,0,2,9043.81,Obese,45-59
+c100575,18,male,south,21.6,1,yes,yes,high,standard,0,0,3,13611.75,Normal weight,18-29
+c100576,45,female,east,27.1,0,no,no,medium,premium,0,0,1,5958.52,Overweight,45-59
+c100577,52,male,north,24.2,2,no,yes,unknown,standard,0,0,3,12136.29,Normal weight,45-59
+c100578,23,female,east,25.2,3,no,yes,high,premium,0,1,4,12079.25,Overweight,18-29
+c100579,57,female,south,26.1,0,yes,no,low,standard,0,0,2,14378.21,Overweight,45-59
+c100580,46,female,east,25.5,1,yes,yes,low,standard,1,0,1,22156.6,Overweight,45-59
+c100581,37,female,south,21.7,3,no,no,medium,basic,1,1,2,6681.92,Normal weight,30-44
+c100582,50,male,east,27.2,3,no,no,medium,basic,1,1,2,6777.6,Overweight,45-59
+c100583,72,female,north,25.9,0,no,no,high,basic,0,0,3,5733.73,Overweight,60+
+c100584,44,male,north,17,2,no,no,medium,basic,1,0,4,6739.71,Underweight,30-44
+c100585,45,female,west,36.8,0,no,no,medium,basic,0,0,2,6589.78,Obese,45-59
+c100586,36,female,east,32.2,0,no,no,medium,basic,0,0,2,6716.63,Obese,30-44
+c100587,31,male,north,25.5,4,no,no,low,basic,0,1,2,9296.66,Overweight,30-44
+c100588,53,female,south,27.9,3,yes,no,medium,premium,0,0,1,19698.73,Overweight,45-59
+c100589,31,male,north,21.9,3,no,no,high,basic,0,0,1,3057.01,Normal weight,30-44
+c100590,43,male,south,35.2,0,no,no,low,standard,1,0,4,10289.2,Obese,30-44
+c100591,36,male,south,35.9,3,no,no,medium,basic,0,0,2,6510.26,Obese,30-44
+c100592,48,male,north,28.4,1,no,no,medium,premium,1,0,0,8790,Overweight,45-59
+c100593,46,female,south,32.2,1,no,no,low,premium,0,0,1,6809.94,Obese,45-59
+c100594,55,female,east,28.7,2,yes,no,low,standard,0,0,3,13801.41,Overweight,45-59
+c100595,35,female,east,21.3,0,no,yes,high,standard,0,0,3,9822.8,Normal weight,30-44
+c100596,38,male,east,25.5,3,no,no,medium,basic,0,0,3,2618.47,Overweight,30-44
+c100597,29,male,north,27.7,2,no,no,low,premium,0,0,1,8755.25,Overweight,18-29
+c100598,36,female,west,25.3,0,yes,yes,low,premium,0,0,4,17737.01,Overweight,30-44
+c100599,47,male,west,26.7,0,no,no,medium,premium,0,0,2,4114.63,Overweight,45-59
+c100600,52,female,west,27.4,0,no,yes,medium,standard,0,0,3,5941.33,Overweight,45-59
+c100601,30,male,west,26.8,0,no,no,medium,standard,0,0,2,8009.82,Overweight,30-44
+c100602,53,female,west,28.1,2,yes,no,low,premium,1,0,1,14534,Overweight,45-59
+c100603,60,male,east,23.3,3,no,no,high,standard,0,0,4,6700.8,Normal weight,60+
+c100604,47,male,north,24.4,0,no,no,medium,standard,1,1,1,8419.79,Normal weight,45-59
+c100605,66,female,east,22.4,0,yes,no,low,basic,1,0,1,12972.55,Normal weight,60+
+c100606,32,female,east,31.6,2,no,no,medium,premium,1,0,3,8924.17,Obese,30-44
+c100607,26,female,east,17.5,3,no,no,medium,basic,0,0,2,4940.15,Underweight,18-29
+c100608,19,female,south,32,1,no,yes,high,basic,0,0,4,9122.72,Obese,18-29
+c100609,61,female,north,34.3,1,yes,no,medium,standard,0,0,2,17345.85,Obese,60+
+c100610,51,male,south,26.4,2,no,no,medium,standard,0,0,2,9025.04,Overweight,45-59
+c100611,41,male,west,17,0,yes,no,high,standard,0,0,4,11848.8,Underweight,30-44
+c100612,46,male,east,26,0,no,no,high,basic,0,0,0,4599.52,Overweight,45-59
+c100613,27,female,east,26.8,2,no,no,high,basic,0,0,3,6796.71,Overweight,18-29
+c100614,74,male,south,23.9,2,yes,yes,low,premium,0,1,2,24564.84,Normal weight,60+
+c100615,44,male,south,25.2,2,no,yes,medium,premium,0,1,4,9876.34,Overweight,30-44
+c100616,43,female,west,34.4,3,no,no,low,standard,0,0,1,9994.02,Obese,30-44
+c100617,51,male,east,30.8,2,no,no,high,standard,0,0,2,7748.52,Obese,45-59
+c100618,48,male,west,23.5,0,no,no,low,premium,0,0,3,8988.31,Normal weight,45-59
+c100619,45,female,south,20.4,1,no,no,medium,standard,0,1,2,7619.03,Normal weight,45-59
+c100620,32,female,east,25.7,0,no,no,medium,standard,0,0,3,5092.99,Overweight,30-44
+c100621,48,female,south,26.7,0,no,no,medium,standard,0,0,3,10330.51,Overweight,45-59
+c100622,66,female,east,30.5,2,yes,no,medium,standard,0,0,3,15384.62,Obese,60+
+c100623,59,male,south,25.6,3,no,yes,high,premium,0,0,4,16301.41,Overweight,45-59
+c100624,63,male,south,30.4,5,yes,yes,medium,standard,0,0,2,24734.88,Obese,60+
+c100625,35,male,east,36,2,no,yes,high,standard,1,0,1,11821.46,Obese,30-44
+c100626,29,female,west,30.8,0,no,yes,medium,basic,0,1,0,9046.22,Obese,18-29
+c100627,40,female,north,27.2,0,no,no,medium,basic,0,0,1,6127.66,Overweight,30-44
+c100628,43,male,west,26.7,3,no,yes,medium,standard,0,0,2,9043.54,Overweight,30-44
+c100629,56,male,south,26.3,2,no,no,low,basic,0,0,2,6781.37,Overweight,45-59
+c100630,20,female,south,32.2,2,no,no,medium,basic,0,1,1,8986.65,Obese,18-29
+c100631,62,male,north,25.3,3,yes,no,medium,standard,3,1,0,18014.36,Overweight,60+
+c100632,40,male,north,27.6,2,yes,yes,medium,standard,0,1,0,23259.28,Overweight,30-44
+c100633,36,female,south,27.6,3,no,no,medium,standard,0,0,3,8179.73,Overweight,30-44
+c100634,29,female,north,24.9,0,yes,no,medium,standard,1,1,2,9131.85,Normal weight,18-29
+c100635,20,male,south,20.7,3,no,yes,low,premium,0,1,2,13633.48,Normal weight,18-29
+c100636,53,female,west,29.3,3,no,no,low,premium,0,0,4,9761.6,Overweight,45-59
+c100637,43,female,north,27.5,0,yes,yes,medium,premium,0,0,1,15508.26,Overweight,30-44
+c100638,25,female,west,29.2,2,no,no,medium,standard,1,0,2,8958.06,Overweight,18-29
+c100639,25,female,south,24.6,1,no,no,low,basic,0,0,2,4685.44,Normal weight,18-29
+c100640,38,male,east,32.9,4,no,no,medium,premium,0,0,1,7386.02,Obese,30-44
+c100641,64,male,south,24.2,0,no,no,medium,basic,1,0,3,9740.47,Normal weight,60+
+c100642,39,female,north,35.1,2,no,no,low,basic,1,0,3,10735.04,Obese,30-44
+c100643,22,male,north,19,0,no,no,medium,standard,0,0,2,4238.91,Normal weight,18-29
+c100644,39,male,north,29.4,2,yes,no,medium,basic,0,0,3,13765.82,Overweight,30-44
+c100645,38,male,north,29.5,0,no,yes,medium,premium,0,1,1,11700.11,Overweight,30-44
+c100646,18,female,east,23.2,0,no,yes,high,standard,0,0,2,9302.44,Normal weight,18-29
+c100647,41,female,west,29.4,1,no,no,medium,standard,0,0,0,9044.22,Overweight,30-44
+c100648,39,male,west,33.2,4,no,no,medium,standard,0,1,1,8930.8,Obese,30-44
+c100649,51,male,east,17.8,0,no,no,medium,standard,1,1,1,8784.95,Underweight,45-59
+c100650,66,female,north,30.5,0,no,yes,low,basic,0,1,4,16906.74,Obese,60+
+c100651,57,female,south,17,3,yes,no,medium,standard,0,0,0,14241.44,Underweight,45-59
+c100652,39,female,south,23.1,1,yes,yes,medium,standard,0,0,2,18282.01,Normal weight,30-44
+c100653,28,male,south,34.4,4,no,no,high,standard,0,0,2,7459.22,Obese,18-29
+c100654,75,male,south,25.9,0,yes,yes,medium,premium,0,0,4,24654.57,Overweight,60+
+c100655,43,female,east,22.2,2,no,no,medium,basic,2,1,4,10300.13,Normal weight,30-44
+c100656,42,female,south,26.6,0,yes,yes,low,basic,0,0,3,15789.33,Overweight,30-44
+c100657,42,male,south,36.8,0,no,no,low,basic,1,0,4,12476.31,Obese,30-44
+c100658,45,male,west,19.3,2,no,no,medium,standard,0,0,3,2910.19,Normal weight,45-59
+c100659,40,female,west,22.7,2,no,no,medium,premium,0,0,4,5635.36,Normal weight,30-44
+c100660,35,male,south,34,3,no,no,low,standard,0,1,3,6506.54,Obese,30-44
+c100661,35,male,west,35.6,1,no,no,medium,standard,0,0,0,10491.65,Obese,30-44
+c100662,42,female,west,27,1,yes,no,low,standard,0,0,2,12186.08,Overweight,30-44
+c100663,35,male,south,21.7,1,no,no,high,standard,0,0,3,10336.18,Normal weight,30-44
+c100664,33,female,south,36.7,5,no,no,low,basic,1,0,2,11379.76,Obese,30-44
+c100665,43,male,south,34.7,0,no,no,high,basic,0,1,1,7249.15,Obese,30-44
+c100666,39,male,west,30.5,0,no,no,high,premium,0,0,2,9774.87,Obese,30-44
+c100667,62,male,west,24.4,1,no,yes,medium,standard,0,1,4,14210.01,Normal weight,60+
+c100668,18,male,north,26.6,2,no,no,medium,premium,0,0,0,3358.47,Overweight,18-29
+c100669,56,female,south,27.2,0,no,no,medium,standard,0,0,3,7388.16,Overweight,45-59
+c100670,58,male,north,29.5,4,no,yes,unknown,standard,0,0,3,14816.71,Overweight,45-59
+c100671,18,male,south,33.3,0,no,no,low,basic,0,0,4,8212.84,Obese,18-29
+c100672,38,female,north,31.3,4,no,yes,low,standard,0,0,4,12665.41,Obese,30-44
+c100673,37,male,west,22.5,0,no,no,medium,standard,1,0,3,5403.65,Normal weight,30-44
+c100674,24,male,east,33.2,2,no,no,medium,basic,1,1,2,9814.42,Obese,18-29
+c100675,32,female,west,28.6,4,no,no,medium,basic,0,1,1,8291.31,Overweight,30-44
+c100676,28,male,west,30.2,0,no,no,medium,basic,0,0,2,6155.28,Obese,18-29
+c100677,65,male,east,34.8,5,no,no,unknown,basic,0,0,3,11378.92,Obese,60+
+c100678,54,female,south,22.9,1,no,no,low,standard,1,0,4,13311.39,Normal weight,45-59
+c100679,59,male,east,27.8,4,no,yes,low,standard,1,0,3,14777.13,Overweight,45-59
+c100680,51,female,north,25.4,2,no,yes,low,basic,0,0,1,8694.59,Overweight,45-59
+c100681,27,female,east,20,1,no,no,low,basic,0,0,2,4760.07,Normal weight,18-29
+c100682,35,female,north,28.9,0,no,no,low,basic,0,0,1,4615.73,Overweight,30-44
+c100683,48,male,east,39,1,yes,yes,medium,standard,1,2,0,26575.47,Obese,45-59
+c100684,26,male,north,18.7,0,yes,yes,low,basic,0,0,1,12373.59,Normal weight,18-29
+c100685,51,female,north,27.6,0,no,no,medium,standard,0,0,1,9072.49,Overweight,45-59
+c100686,39,female,north,30.3,0,no,no,medium,basic,0,0,3,5321.76,Obese,30-44
+c100687,37,male,north,27.9,1,no,no,high,basic,0,0,1,7837.13,Overweight,30-44
+c100688,51,female,east,27.3,3,yes,yes,medium,premium,2,0,2,16867.97,Overweight,45-59
+c100689,48,male,east,21.8,0,yes,yes,low,standard,0,0,4,18156.38,Normal weight,45-59
+c100690,37,male,south,28.4,0,no,no,medium,basic,0,0,2,4300.08,Overweight,30-44
+c100691,57,female,north,24.5,2,no,no,medium,premium,0,0,0,11333.53,Normal weight,45-59
+c100692,28,male,north,17.2,0,no,no,medium,standard,0,1,1,9226.71,Underweight,18-29
+c100693,50,female,north,33.1,0,no,no,low,premium,1,0,1,7511.9,Obese,45-59
+c100694,50,male,north,32.1,0,no,no,high,standard,0,0,1,8737.31,Obese,45-59
+c100695,38,male,west,27.6,4,no,yes,medium,standard,0,1,1,12569.17,Overweight,30-44
+c100696,46,male,south,28.7,3,yes,no,medium,premium,0,0,2,16136.89,Overweight,45-59
+c100697,26,female,south,31.9,1,no,no,medium,basic,0,0,1,6580.64,Obese,18-29
+c100698,54,male,north,28.9,2,no,no,medium,standard,0,0,2,7955.88,Overweight,45-59
+c100699,40,female,north,31.5,1,yes,no,medium,standard,0,0,3,18891.12,Obese,30-44
+c100700,35,female,south,26,2,yes,no,medium,basic,1,1,2,12702.22,Overweight,30-44
+c100701,56,female,east,33.8,2,no,yes,medium,basic,1,0,4,16208.85,Obese,45-59
+c100702,33,male,south,28.7,2,no,no,low,basic,0,0,2,6953.25,Overweight,30-44
+c100703,24,male,north,27.8,0,no,no,high,standard,0,0,2,5333.75,Overweight,18-29
+c100704,22,male,south,21.2,0,no,no,medium,standard,0,0,3,7201.47,Normal weight,18-29
+c100705,50,male,north,29,1,yes,no,low,standard,0,1,0,13478.01,Overweight,45-59
+c100706,25,female,north,23.2,4,yes,no,low,basic,0,1,0,12390.67,Normal weight,18-29
+c100707,65,male,west,25.3,2,no,no,medium,standard,0,0,3,7950.36,Overweight,60+
+c100708,18,female,east,23.1,3,no,no,high,premium,0,0,2,7967.53,Normal weight,18-29
+c100709,64,male,east,23.4,5,no,yes,low,standard,0,0,3,11633.98,Normal weight,60+
+c100710,45,male,south,37.2,0,yes,no,medium,standard,0,0,4,18100.56,Obese,45-59
+c100711,41,male,south,33.5,2,no,yes,low,premium,0,0,2,11283.4,Obese,30-44
+c100712,35,male,east,35.9,2,no,no,medium,standard,1,1,2,7502.63,Obese,30-44
+c100713,47,female,east,22.1,5,no,no,medium,standard,0,0,2,7523.43,Normal weight,45-59
+c100714,42,female,east,27.8,5,no,no,high,premium,0,1,4,9848.78,Overweight,30-44
+c100715,56,male,north,22.1,2,no,no,medium,standard,0,0,3,5775.42,Normal weight,45-59
+c100716,43,female,south,24.4,0,no,no,high,premium,0,0,4,9358.86,Normal weight,30-44
+c100717,44,female,south,23.4,3,yes,yes,medium,standard,1,1,2,19680.47,Normal weight,30-44
+c100718,37,female,west,32.9,0,yes,no,low,basic,1,0,3,19994.5,Obese,30-44
+c100719,41,male,east,25.7,3,no,yes,medium,premium,0,0,2,9500.71,Overweight,30-44
+c100720,46,female,east,32.4,4,no,no,medium,standard,0,0,1,11209.11,Obese,45-59
+c100721,20,female,north,29.6,1,no,no,high,standard,0,0,4,13506.3,Overweight,18-29
+c100722,24,male,east,37.3,2,no,no,high,basic,0,0,0,5129.99,Obese,18-29
+c100723,52,male,north,21.1,1,no,no,low,basic,0,0,2,6497.68,Normal weight,45-59
+c100724,44,female,south,33.2,1,yes,yes,low,premium,0,1,1,24718.4,Obese,30-44
+c100725,40,female,north,32.6,1,no,yes,low,premium,1,0,3,15038.08,Obese,30-44
+c100726,42,female,east,23.1,3,no,no,high,standard,0,0,1,9352.53,Normal weight,30-44
+c100727,47,female,north,32.2,4,yes,yes,medium,standard,0,0,2,24986.18,Obese,45-59
+c100728,35,female,south,28.8,4,yes,yes,medium,standard,0,0,1,17166.73,Overweight,30-44
+c100729,32,male,west,26.2,0,no,no,medium,standard,1,0,2,3268.87,Overweight,30-44
+c100730,45,male,north,23.9,3,no,no,medium,premium,0,1,2,13520.46,Normal weight,45-59
+c100731,29,male,south,23.9,2,no,yes,medium,basic,0,1,3,8397.28,Normal weight,18-29
+c100732,47,female,south,27.5,0,no,yes,low,standard,0,0,0,11295.31,Overweight,45-59
+c100733,20,male,north,26.8,0,no,yes,medium,standard,0,0,1,7881.75,Overweight,18-29
+c100734,55,female,west,31.4,0,no,no,low,standard,0,0,0,8431.92,Obese,45-59
+c100735,48,male,north,24.1,4,yes,no,low,standard,0,0,2,16829.41,Normal weight,45-59
+c100736,45,male,south,24.1,2,no,no,high,standard,1,0,3,4708.3,Normal weight,45-59
+c100737,55,female,east,32.8,2,no,no,medium,basic,0,0,3,7852.41,Obese,45-59
+c100738,64,male,east,22.1,0,no,yes,medium,standard,0,0,2,27337.05,Normal weight,60+
+c100739,55,female,east,26,2,no,no,medium,basic,1,0,2,8806.77,Overweight,45-59
+c100740,18,male,south,26.9,0,yes,no,medium,basic,0,1,3,14067.16,Overweight,18-29
+c100741,25,female,north,27.5,1,no,no,medium,basic,0,0,1,7168.23,Overweight,18-29
+c100742,34,female,east,26.5,2,no,no,high,standard,0,0,2,6704.73,Overweight,30-44
+c100743,42,male,east,29.3,0,no,no,high,standard,1,1,2,10345.7,Overweight,30-44
+c100744,49,female,west,30.8,3,no,no,medium,standard,0,0,1,7550.93,Obese,45-59
+c100745,33,male,west,30.5,0,no,no,low,standard,0,0,0,9417.95,Obese,30-44
+c100746,44,female,west,23.1,2,no,yes,medium,standard,1,0,1,12771.43,Normal weight,30-44
+c100747,32,male,south,25.9,1,no,no,medium,standard,0,0,2,5396.23,Overweight,30-44
+c100748,34,male,south,32.6,2,no,no,low,standard,0,1,0,8664.15,Obese,30-44
+c100749,24,male,west,31,0,no,no,high,standard,0,0,1,5853.97,Obese,18-29
+c100750,30,female,south,21,0,yes,no,low,standard,0,0,1,11223.79,Normal weight,30-44
+c100751,24,female,north,28.5,4,yes,no,low,standard,0,0,0,13354.13,Overweight,18-29
+c100752,29,female,west,18.2,0,no,no,medium,premium,0,0,1,16058.99,Underweight,18-29
+c100753,56,female,west,28.1,3,no,no,high,premium,0,1,4,12425.18,Overweight,45-59
+c100754,30,male,south,35.7,5,no,no,low,basic,0,0,0,6433.83,Obese,30-44
+c100755,75,male,north,24.2,0,no,no,medium,basic,0,0,3,7287.41,Normal weight,60+
+c100756,48,male,south,23.9,0,no,no,medium,standard,1,1,2,10275.01,Normal weight,45-59
+c100757,44,male,west,31,2,yes,yes,low,standard,0,0,3,22505.87,Obese,30-44
+c100758,31,male,west,20.2,5,yes,no,medium,basic,1,0,2,14780.15,Normal weight,30-44
+c100759,51,male,north,24.9,4,no,no,medium,premium,0,0,1,9198.36,Normal weight,45-59
+c100760,35,female,north,30,1,no,yes,medium,basic,0,1,4,10113.85,Obese,30-44
+c100761,44,male,west,24.7,3,yes,yes,high,premium,0,0,2,17685.71,Normal weight,30-44
+c100762,75,male,south,27.4,0,no,yes,low,premium,1,0,4,15442.84,Overweight,60+
+c100763,41,male,east,30.8,5,no,no,low,standard,1,1,2,11679.23,Obese,30-44
+c100764,57,female,west,29.8,5,no,no,high,basic,0,0,4,6450.95,Overweight,45-59
+c100765,33,female,north,28.4,0,no,yes,medium,basic,0,0,3,5950.84,Overweight,30-44
+c100766,42,female,east,26,0,no,no,medium,standard,0,0,4,5411.26,Overweight,30-44
+c100767,65,male,north,29.9,0,no,no,medium,basic,0,0,2,9000.32,Overweight,60+
+c100768,34,male,south,26.7,0,no,yes,medium,standard,0,1,2,7155.86,Overweight,30-44
+c100769,66,female,west,30.3,3,no,no,medium,standard,0,0,3,6721.32,Obese,60+
+c100770,51,male,south,25.5,1,no,no,low,basic,0,1,3,8968.78,Overweight,45-59
+c100771,35,female,west,26.5,0,no,no,medium,basic,0,0,4,9670.1,Overweight,30-44
+c100772,50,female,east,23.3,1,no,no,low,standard,0,0,1,9818.78,Normal weight,45-59
+c100773,55,female,south,27.7,5,no,no,high,basic,1,0,3,10451.03,Overweight,45-59
+c100774,50,male,north,24.1,2,yes,no,low,basic,0,0,1,23189.97,Normal weight,45-59
+c100775,22,male,south,21.9,1,no,yes,medium,standard,0,1,2,9415.42,Normal weight,18-29
+c100776,33,female,south,28.4,0,no,no,high,premium,0,0,1,8805.83,Overweight,30-44
+c100777,39,male,north,28.4,5,yes,no,medium,standard,0,0,2,12886.02,Overweight,30-44
+c100778,41,female,south,31,3,no,no,medium,basic,0,0,4,5047.7,Obese,30-44
+c100779,50,male,south,25.8,0,no,yes,medium,standard,0,0,1,7935.12,Overweight,45-59
+c100780,44,male,east,29.4,0,no,no,medium,premium,0,0,2,9958.31,Overweight,30-44
+c100781,25,male,east,29.5,0,no,no,medium,standard,1,0,2,5006.41,Overweight,18-29
+c100782,47,female,east,29.7,0,no,no,medium,standard,1,2,1,11677.35,Overweight,45-59
+c100783,50,male,north,24,2,yes,no,high,basic,0,0,2,12842.53,Normal weight,45-59
+c100784,49,male,north,28.4,4,no,no,high,standard,0,0,2,8638.32,Overweight,45-59
+c100785,56,female,east,29.6,1,no,no,unknown,basic,1,1,1,7707.92,Overweight,45-59
+c100786,53,male,south,27.9,3,yes,no,high,standard,0,0,3,13477.43,Overweight,45-59
+c100787,48,female,north,18.3,1,no,no,medium,standard,0,0,4,6853.44,Underweight,45-59
+c100788,41,male,west,28.2,2,no,no,medium,premium,0,1,1,7537.44,Overweight,30-44
+c100789,20,female,west,36.8,2,no,no,high,basic,0,0,1,1767.75,Obese,18-29
+c100790,48,male,east,26.1,0,no,no,medium,basic,0,1,2,4576.86,Overweight,45-59
+c100791,45,male,north,24.3,1,no,no,high,standard,1,0,3,7014.47,Normal weight,45-59
+c100792,46,female,west,29.3,2,no,no,medium,standard,0,0,1,5202.61,Overweight,45-59
+c100793,25,female,east,28.4,0,no,no,medium,standard,0,1,0,8696.9,Overweight,18-29
+c100794,28,female,west,32.4,1,no,no,medium,basic,0,0,2,6455,Obese,18-29
+c100795,56,female,east,22.3,1,no,no,high,basic,0,0,4,5574.09,Normal weight,45-59
+c100796,41,female,west,30.8,5,no,no,low,standard,0,0,2,11890.88,Obese,30-44
+c100797,51,male,south,30.4,1,no,no,medium,basic,1,1,2,11332.04,Obese,45-59
+c100798,42,female,north,26.9,3,no,no,unknown,premium,0,2,4,10778.46,Overweight,30-44
+c100799,42,female,east,29,1,no,yes,medium,standard,0,1,3,7981.62,Overweight,30-44
+c100800,54,male,east,32.5,3,yes,no,medium,standard,0,0,3,17827.24,Obese,45-59
+c100801,35,female,east,31.2,2,no,yes,medium,standard,0,0,2,11140.79,Obese,30-44
+c100802,43,male,north,22.4,4,no,no,medium,standard,0,0,4,5134.02,Normal weight,30-44
+c100803,36,male,north,31,1,no,no,low,basic,0,0,3,9773.98,Obese,30-44
+c100804,36,male,west,27,2,no,no,medium,premium,0,1,4,8079.64,Overweight,30-44
+c100805,38,male,east,27.7,2,no,no,medium,basic,0,0,3,3803.14,Overweight,30-44
+c100806,45,male,west,27.9,1,no,no,medium,standard,0,1,3,8944.14,Overweight,45-59
+c100807,36,female,east,26.6,0,yes,no,low,basic,1,0,1,19011.39,Overweight,30-44
+c100808,58,female,east,33.3,0,no,yes,high,standard,1,0,2,13150.56,Obese,45-59
+c100809,30,female,east,26.8,0,no,no,medium,basic,0,0,3,1453.85,Overweight,30-44
+c100810,40,male,west,22.4,3,no,no,medium,basic,1,0,1,5155.95,Normal weight,30-44
+c100811,36,female,east,25.5,0,no,yes,medium,premium,0,1,2,8098.78,Overweight,30-44
+c100812,61,male,east,28.9,0,no,no,medium,basic,0,0,1,10115.6,Overweight,60+
+c100813,45,male,north,33.1,2,no,yes,medium,premium,0,0,3,8700.2,Obese,45-59
+c100814,55,male,south,30.6,1,yes,no,medium,premium,1,0,1,17850.23,Obese,45-59
+c100815,23,male,east,23.1,1,no,no,medium,basic,0,0,3,4187.76,Normal weight,18-29
+c100816,45,female,south,38.8,0,no,yes,medium,standard,0,0,3,14650.31,Obese,45-59
+c100817,54,male,north,29.1,4,no,yes,medium,premium,0,0,1,11638.25,Overweight,45-59
+c100818,43,male,south,33.3,3,no,no,low,basic,0,0,2,5745.79,Obese,30-44
+c100819,56,female,south,27.2,3,no,no,medium,standard,0,0,1,8717.34,Overweight,45-59
+c100820,35,female,north,29.7,1,no,no,low,premium,1,0,1,8912.61,Overweight,30-44
+c100821,60,male,south,31.8,3,no,no,low,basic,1,0,2,11963.96,Obese,60+
+c100822,72,male,west,33.9,0,no,yes,high,standard,1,1,1,17488.74,Obese,60+
+c100823,37,male,south,32.1,0,no,yes,medium,standard,0,1,4,10536.64,Obese,30-44
+c100824,36,male,north,31.2,0,no,no,medium,premium,0,0,0,9434.53,Obese,30-44
+c100825,61,male,north,26.7,2,yes,no,medium,basic,0,0,3,14733.84,Overweight,60+
+c100826,63,male,east,25.6,1,no,no,high,standard,1,0,2,11030.37,Overweight,60+
+c100827,35,female,south,28.8,1,no,no,medium,standard,0,1,2,8505.75,Overweight,30-44
+c100828,37,female,west,31.5,0,yes,no,medium,standard,1,0,2,18405.19,Obese,30-44
+c100829,38,female,east,26.4,1,no,yes,medium,premium,0,1,3,13472.48,Overweight,30-44
+c100830,25,male,west,31.8,2,no,no,high,standard,0,0,3,6347.89,Obese,18-29
+c100831,30,male,south,33.7,1,no,yes,medium,basic,0,0,3,12844.3,Obese,30-44
+c100832,29,male,east,23,2,yes,no,high,standard,1,2,1,15451.74,Normal weight,18-29
+c100833,32,female,south,23.4,0,no,no,low,standard,0,0,2,5666.38,Normal weight,30-44
+c100834,42,male,west,26.9,3,no,no,medium,standard,0,1,1,8673.3,Overweight,30-44
+c100835,45,male,east,29,2,no,no,medium,standard,0,0,0,10209.81,Overweight,45-59
+c100836,62,male,south,25.7,0,no,no,low,standard,1,1,2,13837.83,Overweight,60+
+c100837,29,male,south,33.2,0,no,no,high,standard,0,0,2,3922.4,Obese,18-29
+c100838,55,female,north,29.8,2,no,no,low,premium,0,0,2,10416.49,Overweight,45-59
+c100839,39,male,east,27.6,3,no,no,low,basic,0,0,3,6205.62,Overweight,30-44
+c100840,41,female,north,21,1,no,no,medium,premium,0,0,1,8156,Normal weight,30-44
+c100841,51,female,east,21.8,0,no,no,low,standard,0,0,1,8532.12,Normal weight,45-59
+c100842,27,female,south,28.3,3,no,no,low,standard,0,0,0,8421.05,Overweight,18-29
+c100843,47,male,east,18.1,2,yes,no,medium,premium,1,0,3,16499.56,Underweight,45-59
+c100844,44,male,west,32.1,1,no,no,medium,standard,0,1,2,14099.32,Obese,30-44
+c100845,48,male,west,27,1,no,no,low,standard,0,0,2,6477.24,Overweight,45-59
+c100846,46,male,west,42.2,0,no,no,medium,standard,0,1,3,9205.92,Obese,45-59
+c100847,74,female,north,38.8,2,no,yes,low,standard,1,0,3,22397.24,Obese,60+
+c100848,34,male,north,26.4,1,yes,yes,low,premium,0,0,2,19488.67,Overweight,30-44
+c100849,35,female,east,26.8,5,yes,yes,medium,premium,0,0,2,16941.64,Overweight,30-44
+c100850,34,female,south,31.7,1,yes,no,medium,basic,0,0,2,13817.23,Obese,30-44
+c100851,35,female,south,35,1,no,no,medium,basic,0,0,2,4513.08,Obese,30-44
+c100852,34,female,north,19.9,2,no,no,medium,standard,0,0,1,4532.83,Normal weight,30-44
+c100853,57,female,south,19.9,4,no,no,low,basic,0,0,1,9420,Normal weight,45-59
+c100854,60,female,north,25.2,3,no,yes,high,standard,0,1,1,12294.08,Overweight,60+
+c100855,35,female,west,29.9,1,no,no,high,basic,1,2,3,10674.16,Overweight,30-44
+c100856,31,male,south,29.4,2,yes,no,high,standard,0,0,4,13264.61,Overweight,30-44
+c100857,48,female,east,32.5,2,no,no,low,basic,1,0,2,9694.37,Obese,45-59
+c100858,35,female,north,27.5,1,no,no,high,basic,0,1,1,6931.87,Overweight,30-44
+c100859,50,female,east,17.3,0,no,no,high,standard,0,0,3,6534.37,Underweight,45-59
+c100860,45,male,south,31.5,1,yes,no,medium,standard,0,0,3,16520.95,Obese,45-59
+c100861,22,female,west,23.2,0,no,no,low,premium,0,0,3,2581.45,Normal weight,18-29
+c100862,62,female,west,19,4,no,yes,medium,premium,0,1,3,13763.59,Normal weight,60+
+c100863,65,male,south,28.8,1,yes,yes,high,standard,2,1,4,21533.19,Overweight,60+
+c100864,34,female,west,30.8,4,no,no,medium,basic,0,0,0,6821.56,Obese,30-44
+c100865,37,female,west,26.8,1,no,no,medium,premium,0,1,1,9345.18,Overweight,30-44
+c100866,46,female,west,25.6,2,no,no,high,premium,0,1,1,9832.35,Overweight,45-59
+c100867,46,female,west,26.9,2,no,no,medium,standard,0,0,3,9758.26,Overweight,45-59
+c100868,51,female,south,26.1,0,yes,no,medium,basic,0,0,0,12123.07,Overweight,45-59
+c100869,68,female,east,22.2,1,no,yes,medium,premium,0,2,2,11166.25,Normal weight,60+
+c100870,40,male,north,27.5,0,no,no,high,basic,1,0,2,6552.88,Overweight,30-44
+c100871,32,male,north,29.5,2,no,no,low,standard,0,0,1,9038.6,Overweight,30-44
+c100872,24,male,west,28.4,1,no,no,medium,premium,1,1,3,9268.1,Overweight,18-29
+c100873,32,female,south,28,3,no,no,medium,basic,0,0,1,5062.9,Overweight,30-44
+c100874,42,male,east,23,0,no,no,unknown,premium,0,1,2,10000.19,Normal weight,30-44
+c100875,65,female,west,27.4,0,no,no,medium,premium,0,0,3,11133.67,Overweight,60+
+c100876,35,female,west,17.5,1,no,no,high,premium,1,0,0,5459.67,Underweight,30-44
+c100877,45,male,west,28.4,4,no,no,high,basic,0,0,3,6686.43,Overweight,45-59
+c100878,42,female,south,33.9,2,no,no,low,premium,0,1,3,12136.37,Obese,30-44
+c100879,57,female,north,21.3,1,no,no,medium,basic,0,1,4,7112.48,Normal weight,45-59
+c100880,75,female,south,27.5,1,no,no,low,standard,0,0,4,10214.69,Overweight,60+
+c100881,35,male,west,28.8,0,yes,no,low,standard,0,0,1,13132.46,Overweight,30-44
+c100882,36,female,north,33,5,no,no,medium,standard,0,0,2,6879.23,Obese,30-44
+c100883,56,male,south,25.9,2,no,yes,high,standard,0,0,1,13189.08,Overweight,45-59
+c100884,51,male,west,24.7,0,no,yes,high,standard,0,0,2,10563.69,Normal weight,45-59
+c100885,66,female,east,19.4,2,no,no,low,basic,0,0,1,11125.96,Normal weight,60+
+c100886,50,female,south,28.2,0,no,no,low,standard,0,0,1,5470.74,Overweight,45-59
+c100887,37,female,east,36.5,5,no,no,medium,basic,1,0,3,11662.52,Obese,30-44
+c100888,50,female,north,29,0,yes,yes,medium,premium,1,0,2,19054.18,Overweight,45-59
+c100889,56,female,north,27.8,2,no,no,medium,basic,0,0,2,6569.79,Overweight,45-59
+c100890,53,male,west,29.3,0,no,no,high,basic,0,0,2,7655.06,Overweight,45-59
+c100891,49,male,east,27.7,2,no,yes,high,basic,0,0,2,12535.3,Overweight,45-59
+c100892,56,male,west,24.3,3,no,yes,medium,standard,0,0,4,14924.53,Normal weight,45-59
+c100893,57,female,north,27.5,2,yes,no,medium,basic,0,0,1,19467.38,Overweight,45-59
+c100894,60,male,west,29.1,2,no,no,medium,standard,0,0,2,7881.72,Overweight,60+
+c100895,50,male,east,27.8,4,no,no,medium,standard,2,2,2,14832,Overweight,45-59
+c100896,40,male,east,23.1,0,no,no,medium,premium,0,0,0,4422.02,Normal weight,30-44
+c100897,44,female,east,33.4,1,no,no,low,standard,0,1,2,9125.9,Obese,30-44
+c100898,58,male,west,31,0,no,no,high,basic,0,0,3,7968.82,Obese,45-59
+c100899,31,female,east,24.7,5,no,no,medium,standard,0,0,0,4336.45,Normal weight,30-44
+c100900,47,female,east,32.2,1,no,no,medium,basic,0,0,0,6851.48,Obese,45-59
+c100901,37,female,west,25.1,2,yes,yes,medium,premium,0,0,1,21505.9,Overweight,30-44
+c100902,42,male,east,24,2,no,no,low,basic,1,1,3,9423.57,Normal weight,30-44
+c100903,59,male,south,24.6,0,no,no,low,standard,0,1,3,8246.28,Normal weight,45-59
+c100904,44,female,east,19.6,0,no,no,medium,standard,0,1,2,4888.32,Normal weight,30-44
+c100905,43,female,south,27.5,0,no,no,medium,premium,0,0,2,7760.14,Overweight,30-44
+c100906,24,female,north,18.7,1,no,yes,medium,basic,0,0,4,7188.41,Normal weight,18-29
+c100907,52,female,east,22.3,0,no,no,medium,standard,0,0,3,3848.13,Normal weight,45-59
+c100908,50,female,west,18.4,0,no,no,medium,basic,2,0,2,5908.75,Underweight,45-59
+c100909,70,female,west,28,3,no,no,medium,standard,0,0,3,7278.81,Overweight,60+
+c100910,38,male,south,26.7,5,yes,no,medium,premium,2,0,2,19506.88,Overweight,30-44
+c100911,45,female,south,26.1,1,no,yes,high,standard,0,1,2,10943.89,Overweight,45-59
+c100912,45,female,north,22.9,1,no,no,medium,standard,0,0,3,7957.14,Normal weight,45-59
+c100913,63,female,west,22.9,0,no,no,medium,premium,0,1,4,9149.45,Normal weight,60+
+c100914,41,male,west,29.6,2,no,no,low,standard,0,0,0,9468.32,Overweight,30-44
+c100915,46,male,east,25.1,3,no,no,medium,standard,1,0,2,7534.75,Overweight,45-59
+c100916,50,male,west,29.2,0,yes,no,low,standard,0,0,4,13492.22,Overweight,45-59
+c100917,44,female,east,23.6,0,no,no,medium,standard,0,1,1,12146.75,Normal weight,30-44
+c100918,36,male,east,28.1,3,yes,yes,low,basic,0,0,4,19101.91,Overweight,30-44
+c100919,45,female,north,33.5,2,no,no,low,standard,0,1,2,12302.85,Obese,45-59
+c100920,56,male,south,30.6,0,no,no,high,standard,1,0,1,6876.93,Obese,45-59
+c100921,29,male,east,25.3,2,no,no,medium,basic,0,1,0,5701.56,Overweight,18-29
+c100922,44,male,east,28.7,1,no,no,low,standard,0,0,1,5911.72,Overweight,30-44
+c100923,33,male,south,26.1,1,no,no,low,standard,0,0,1,6840.42,Overweight,30-44
+c100924,58,male,west,28,3,yes,no,medium,basic,0,0,2,12951.09,Overweight,45-59
+c100925,22,female,north,25.4,3,yes,no,low,standard,0,1,3,12816.9,Overweight,18-29
+c100926,35,male,south,26.6,1,yes,no,medium,premium,0,0,4,14904.8,Overweight,30-44
+c100927,47,female,east,28.6,4,no,yes,medium,premium,0,0,2,10963,Overweight,45-59
+c100928,62,male,east,23.6,1,no,no,medium,premium,0,0,2,9712.79,Normal weight,60+
+c100929,41,female,east,22.9,3,no,no,medium,premium,0,0,2,6286.61,Normal weight,30-44
+c100930,35,female,south,21,1,no,no,high,basic,1,0,2,8014.94,Normal weight,30-44
+c100931,66,female,north,21,4,no,no,low,standard,0,0,2,9446.56,Normal weight,60+
+c100932,23,female,east,21.5,4,no,yes,medium,premium,0,1,0,8674.59,Normal weight,18-29
+c100933,18,female,east,27.5,0,no,no,medium,standard,0,0,0,5535.85,Overweight,18-29
+c100934,48,male,north,23.7,4,no,no,low,standard,0,0,0,6108.47,Normal weight,45-59
+c100935,35,female,east,29.6,3,no,no,medium,standard,0,0,1,6238.81,Overweight,30-44
+c100936,29,female,south,27.3,3,no,no,medium,standard,0,0,3,7000.5,Overweight,18-29
+c100937,51,male,east,18.9,0,no,no,medium,premium,0,0,1,8025.2,Normal weight,45-59
+c100938,45,female,west,30.5,3,no,no,medium,standard,1,2,4,8908.45,Obese,45-59
+c100939,35,male,north,30.9,3,no,no,unknown,standard,0,0,4,4717.01,Obese,30-44
+c100940,25,male,north,27.5,0,yes,no,medium,premium,0,0,4,6856.49,Overweight,18-29
+c100941,53,male,west,29.7,4,no,no,medium,standard,2,0,4,11087.2,Overweight,45-59
+c100942,50,male,east,23.9,0,no,no,medium,basic,0,0,1,4462.58,Normal weight,45-59
+c100943,41,female,east,27.9,0,no,no,medium,standard,0,0,2,7492.53,Overweight,30-44
+c100944,66,male,west,22.5,1,no,yes,unknown,premium,0,0,1,15995.82,Normal weight,60+
+c100945,28,female,west,19,2,no,yes,low,premium,0,1,3,11348.65,Normal weight,18-29
+c100946,22,female,west,25.2,2,no,yes,medium,premium,0,0,4,11671.51,Overweight,18-29
+c100947,33,male,east,26.7,0,no,yes,high,standard,0,0,4,10542.06,Overweight,30-44
+c100948,41,female,south,25.7,5,no,yes,medium,standard,2,2,2,18343.97,Overweight,30-44
+c100949,45,male,south,22.3,0,no,no,low,premium,0,0,3,12176.16,Normal weight,45-59
+c100950,39,male,north,25.6,0,no,no,unknown,premium,1,0,1,6128.8,Overweight,30-44
+c100951,47,male,east,28.9,0,no,yes,medium,basic,0,0,0,11871.47,Overweight,45-59
+c100952,26,male,south,26.8,2,no,no,medium,basic,0,0,3,6577.9,Overweight,18-29
+c100953,61,female,west,28.9,4,no,no,high,premium,0,0,2,8941.52,Overweight,60+
+c100954,41,female,east,24.5,2,no,no,medium,premium,0,0,4,9283.95,Normal weight,30-44
+c100955,57,male,east,33.2,3,no,no,low,premium,0,0,0,7812.11,Obese,45-59
+c100956,46,female,south,22.3,0,no,no,medium,premium,0,0,3,4326.43,Normal weight,45-59
+c100957,48,male,north,29.9,2,yes,no,medium,standard,0,1,2,13944.61,Overweight,45-59
+c100958,49,male,north,33,1,no,no,medium,standard,0,0,3,8418.22,Obese,45-59
+c100959,48,male,south,29.8,1,no,yes,medium,standard,0,0,3,12112.88,Overweight,45-59
+c100960,50,female,north,26.8,0,no,no,high,basic,1,0,4,6288.97,Overweight,45-59
+c100961,59,female,east,25.6,2,no,no,high,standard,0,0,1,10513.12,Overweight,45-59
+c100962,45,female,west,32.3,1,yes,no,medium,standard,0,0,4,19656.91,Obese,45-59
+c100963,51,female,west,21.4,3,no,no,high,standard,0,0,1,4103.47,Normal weight,45-59
+c100964,41,male,east,23.1,1,no,no,high,standard,0,0,1,5228.61,Normal weight,30-44
+c100965,61,female,north,26.3,0,yes,yes,low,standard,1,0,2,19682.41,Overweight,60+
+c100966,33,female,west,32.8,2,no,yes,low,basic,0,0,3,11278.7,Obese,30-44
+c100967,65,female,west,29.9,0,no,no,medium,basic,0,0,2,8111.58,Overweight,60+
+c100968,41,male,north,23.1,3,yes,no,high,basic,0,0,3,10806.6,Normal weight,30-44
+c100969,23,male,east,25.5,2,no,no,medium,basic,0,0,3,7923.54,Overweight,18-29
+c100970,44,female,south,24.8,0,no,no,medium,premium,0,0,1,8265.84,Normal weight,30-44
+c100971,33,female,west,27.5,5,no,no,low,basic,0,0,4,5115.98,Overweight,30-44
+c100972,53,female,west,32.2,1,no,yes,low,basic,0,0,1,11816.59,Obese,45-59
+c100973,34,female,north,21.1,0,no,yes,medium,standard,0,2,4,14909.9,Normal weight,30-44
+c100974,36,male,west,34.6,2,yes,yes,low,standard,0,1,2,23889.99,Obese,30-44
+c100975,18,male,east,30.5,0,no,no,medium,basic,0,1,2,6048.67,Obese,18-29
+c100976,36,female,west,32.2,3,no,yes,low,premium,0,0,2,10914.1,Obese,30-44
+c100977,18,female,south,24.7,3,yes,no,medium,standard,0,0,1,11166.2,Normal weight,18-29
+c100978,21,male,west,26.2,5,no,yes,medium,basic,0,0,2,8105.48,Overweight,18-29
+c100979,52,female,north,27.5,1,no,no,medium,basic,0,0,1,6891.13,Overweight,45-59
+c100980,52,male,south,25.4,1,no,no,medium,premium,2,2,1,13386.07,Overweight,45-59
+c100981,48,female,north,29.9,3,yes,no,low,standard,0,0,1,14550.48,Overweight,45-59
+c100982,29,female,west,32.9,0,no,no,medium,standard,0,0,2,7692.42,Obese,18-29
+c100983,41,female,west,22.5,2,no,no,medium,basic,0,0,3,3241.57,Normal weight,30-44
+c100984,42,female,west,25.9,2,no,no,medium,standard,0,0,2,6722.76,Overweight,30-44
+c100985,27,male,west,26.4,0,no,no,medium,standard,0,0,4,3276.32,Overweight,18-29
+c100986,62,female,north,21.8,1,yes,no,low,basic,2,0,3,14525.3,Normal weight,60+
+c100987,53,female,south,30.5,3,no,yes,high,standard,0,0,3,9626.44,Obese,45-59
+c100988,39,female,north,24.2,3,no,yes,medium,standard,0,0,3,8976.33,Normal weight,30-44
+c100989,42,female,north,26.6,0,yes,no,medium,basic,1,0,2,13341.99,Overweight,30-44
+c100990,45,female,north,25.6,0,no,no,low,standard,1,1,3,11809.12,Overweight,45-59
+c100991,18,female,south,23.2,0,no,no,high,premium,0,0,0,3569.2,Normal weight,18-29
+c100992,39,male,south,27.4,3,no,no,high,standard,0,0,3,7717.75,Overweight,30-44
+c100993,33,female,north,26.3,0,no,yes,unknown,premium,0,0,3,13215.49,Overweight,30-44
+c100994,29,female,north,25.4,2,no,no,medium,basic,0,0,1,4955.08,Overweight,18-29
+c100995,38,male,north,24.1,0,yes,no,unknown,premium,0,0,3,13283.61,Normal weight,30-44
+c100996,65,female,west,29.6,2,no,yes,medium,basic,0,0,0,12960.55,Overweight,60+
+c100997,50,male,east,35.2,1,no,no,medium,basic,0,0,1,6570.46,Obese,45-59
+c100998,35,female,west,27.9,3,no,no,medium,standard,0,0,0,4429.79,Overweight,30-44
+c100999,49,male,south,32.2,0,no,no,medium,standard,0,0,3,10152.66,Obese,45-59
+c101000,60,male,west,21.8,2,no,yes,medium,premium,0,1,3,12904.24,Normal weight,60+
+c101001,54,male,west,28.6,0,no,no,low,standard,0,0,3,9682.25,Overweight,45-59
+c101002,43,male,south,27.5,2,yes,no,medium,basic,0,0,0,14140.98,Overweight,30-44
+c101003,34,female,south,20.6,3,no,no,high,standard,0,0,2,5667.29,Normal weight,30-44
+c101004,51,male,north,24.4,0,no,no,medium,standard,0,0,3,8127.59,Normal weight,45-59
+c101005,47,female,north,33,3,no,yes,medium,standard,1,1,1,12818.62,Obese,45-59
+c101006,54,female,south,32.1,2,yes,no,medium,standard,0,0,2,19500.08,Obese,45-59
+c101007,50,female,south,28.8,0,no,no,medium,standard,0,0,0,9231.16,Overweight,45-59
+c101008,56,male,east,21,1,no,yes,high,premium,1,0,1,14216.49,Normal weight,45-59
+c101009,35,female,north,26.4,0,no,no,high,premium,0,0,2,7326.24,Overweight,30-44
+c101010,59,male,north,29.4,2,yes,yes,low,standard,0,0,3,21801.19,Overweight,45-59
+c101011,45,male,west,28.4,3,no,no,high,standard,0,0,1,10417.33,Overweight,45-59
+c101012,69,male,north,20,0,no,yes,medium,standard,1,0,1,13515.72,Normal weight,60+
+c101013,33,male,south,23.2,1,no,no,high,standard,1,0,1,5445.26,Normal weight,30-44
+c101014,65,female,west,27.9,3,no,no,medium,standard,0,0,1,10152.65,Overweight,60+
+c101015,45,female,north,30,4,no,no,high,premium,0,0,1,9009.18,Obese,45-59
+c101016,34,female,north,17.4,1,no,no,low,standard,0,2,2,9132.29,Underweight,30-44
+c101017,36,female,south,26.6,4,no,no,medium,premium,0,1,2,12159.04,Overweight,30-44
+c101018,38,female,south,28,1,yes,yes,high,premium,0,0,2,14828.06,Overweight,30-44
+c101019,48,female,east,31.5,1,yes,no,low,premium,1,0,3,20564.7,Obese,45-59
+c101020,49,female,west,30.8,3,no,no,low,standard,0,0,3,15145.36,Obese,45-59
+c101021,35,male,north,29.9,1,yes,no,medium,standard,1,2,1,14221.71,Overweight,30-44
+c101022,42,male,east,23.9,1,no,no,high,basic,0,0,0,2281.42,Normal weight,30-44
+c101023,70,female,south,19.8,1,no,no,low,standard,0,0,4,5569.08,Normal weight,60+
+c101024,64,male,south,26.4,3,no,no,high,basic,0,0,1,7417.9,Overweight,60+
+c101025,48,female,east,32.2,3,no,no,medium,standard,0,0,1,7279.48,Obese,45-59
+c101026,42,female,south,33.8,1,no,yes,medium,standard,0,0,0,9737.36,Obese,30-44
+c101027,44,male,south,30.8,1,no,yes,high,standard,0,1,3,11607.61,Obese,30-44
+c101028,50,female,north,29.7,1,no,no,medium,premium,2,3,2,13529,Overweight,45-59
+c101029,29,female,south,28.8,2,no,yes,low,premium,0,1,4,15050.68,Overweight,18-29
+c101030,39,male,south,24.9,0,no,no,medium,basic,0,0,3,4073.97,Normal weight,30-44
+c101031,20,male,west,26.3,3,no,yes,medium,standard,0,0,2,10995.73,Overweight,18-29
+c101032,47,male,north,35.2,1,yes,no,medium,standard,0,1,2,18326.51,Obese,45-59
+c101033,50,male,south,23.5,1,no,no,high,standard,2,0,1,7223.36,Normal weight,45-59
+c101034,36,male,south,34.6,0,no,no,medium,standard,0,0,1,7247.8,Obese,30-44
+c101035,62,female,east,26.7,0,no,no,medium,standard,0,0,1,9937.84,Overweight,60+
+c101036,26,female,east,33,4,no,no,medium,standard,0,0,1,9275.16,Obese,18-29
+c101037,23,female,east,20.6,1,yes,yes,low,premium,0,0,1,17705.44,Normal weight,18-29
+c101038,45,female,west,30.2,0,no,yes,low,premium,0,0,2,12567.61,Obese,45-59
+c101039,56,male,west,24.6,1,no,no,high,basic,0,1,2,4397.7,Normal weight,45-59
+c101040,64,female,south,21.8,1,no,no,unknown,standard,0,1,4,6770.26,Normal weight,60+
+c101041,36,male,east,28.3,0,no,no,low,standard,1,0,2,6788.4,Overweight,30-44
+c101042,56,male,west,32.5,1,yes,no,medium,standard,0,0,4,17866.11,Obese,45-59
+c101043,41,male,west,23.7,2,no,no,medium,basic,0,0,2,7878.07,Normal weight,30-44
+c101044,40,male,west,20.7,2,no,no,high,standard,0,0,2,2112.18,Normal weight,30-44
+c101045,53,male,south,27.4,1,no,yes,medium,standard,0,0,2,8093.35,Overweight,45-59
+c101046,50,female,north,27.3,1,no,no,low,basic,0,0,1,7863.19,Overweight,45-59
+c101047,22,male,south,29.4,5,no,no,medium,standard,1,0,1,7873.14,Overweight,18-29
+c101048,61,female,east,32.3,1,no,no,medium,standard,0,0,4,9003.86,Obese,60+
+c101049,60,male,south,27.8,0,no,no,medium,basic,0,0,4,10491.85,Overweight,60+
+c101050,34,female,south,35.6,0,no,no,medium,basic,0,0,0,7805.57,Obese,30-44
+c101051,47,male,west,28.7,1,yes,no,high,premium,1,1,1,18737.84,Overweight,45-59
+c101052,48,male,south,26.1,3,no,no,high,basic,0,0,2,5702.56,Overweight,45-59
+c101053,45,female,west,20.3,0,no,yes,medium,premium,0,2,1,11757.07,Normal weight,45-59
+c101054,35,female,south,26.1,2,no,yes,medium,standard,0,0,2,8422.73,Overweight,30-44
+c101055,33,male,south,25.7,0,no,no,medium,basic,0,0,1,7781.06,Overweight,30-44
+c101056,42,female,south,31.8,1,no,no,high,basic,0,0,2,7358.93,Obese,30-44
+c101057,57,male,west,30,3,no,no,high,basic,0,0,1,6436.95,Obese,45-59
+c101058,49,male,north,22.4,1,no,yes,low,basic,0,0,2,10231.37,Normal weight,45-59
+c101059,37,female,north,28.1,2,no,no,medium,basic,0,0,0,8370.85,Overweight,30-44
+c101060,52,female,west,30.8,0,no,no,medium,standard,1,0,2,8506.87,Obese,45-59
+c101061,18,female,north,33.7,3,no,no,low,basic,1,0,4,6395.62,Obese,18-29
+c101062,57,male,north,31.9,0,no,no,low,standard,2,0,1,11857.55,Obese,45-59
+c101063,19,female,east,30.2,3,no,no,medium,standard,1,1,3,4335.52,Obese,18-29
+c101064,37,male,south,27.6,0,yes,yes,medium,standard,2,0,4,19922.14,Overweight,30-44
+c101065,27,female,east,28.8,3,yes,no,low,basic,0,0,4,13249.46,Overweight,18-29
+c101066,25,male,north,32.6,1,no,no,medium,basic,0,0,3,7073.7,Obese,18-29
+c101067,57,male,east,22,2,no,no,medium,basic,0,0,2,9700.25,Normal weight,45-59
+c101068,36,male,south,25.7,1,no,no,medium,standard,0,0,3,4453.75,Overweight,30-44
+c101069,47,female,east,24.2,4,no,yes,medium,standard,0,0,1,7394.45,Normal weight,45-59
+c101070,41,male,north,29.2,0,yes,yes,low,premium,2,0,2,22326.99,Overweight,30-44
+c101071,48,male,east,33.2,0,no,yes,medium,standard,1,0,4,11870.87,Obese,45-59
+c101072,43,male,north,24.8,1,no,yes,low,standard,1,1,3,13901.97,Normal weight,30-44
+c101073,25,male,south,17,0,no,no,medium,standard,0,0,4,5065.71,Underweight,18-29
+c101074,55,female,north,26,0,no,no,low,standard,0,0,3,8449.83,Overweight,45-59
+c101075,36,female,north,31.4,4,no,no,medium,basic,0,0,3,6920.64,Obese,30-44
+c101076,22,male,west,29.3,5,no,no,low,basic,0,1,3,4972.85,Overweight,18-29
+c101077,36,female,south,29.2,1,no,no,medium,standard,1,2,3,10651.55,Overweight,30-44
+c101078,62,male,west,26.8,4,no,yes,medium,standard,0,0,2,16266.15,Overweight,60+
+c101079,53,male,west,22.1,2,no,no,low,standard,0,0,4,5140.21,Normal weight,45-59
+c101080,37,female,east,29.7,0,no,no,medium,standard,0,0,3,3597.52,Overweight,30-44
+c101081,37,male,north,23.6,2,no,no,low,standard,1,0,3,7228.81,Normal weight,30-44
+c101082,38,female,south,37.2,2,no,no,medium,standard,0,0,3,5585.4,Obese,30-44
+c101083,69,male,west,30.9,5,no,no,low,standard,0,0,2,7259.44,Obese,60+
+c101084,47,male,south,25,0,yes,no,medium,standard,1,0,0,12799.93,Overweight,45-59
+c101085,48,male,north,24.9,2,yes,no,medium,standard,0,0,4,13296.5,Normal weight,45-59
+c101086,55,female,east,27.5,0,yes,yes,high,standard,0,0,3,16825.63,Overweight,45-59
+c101087,45,female,west,26.5,0,no,no,medium,standard,0,0,1,7307.37,Overweight,45-59
+c101088,39,male,west,32.4,0,no,yes,medium,premium,0,1,1,13012.51,Obese,30-44
+c101089,39,male,north,28.2,5,no,no,medium,standard,0,0,3,4755.36,Overweight,30-44
+c101090,41,male,east,24.2,3,yes,yes,high,standard,0,0,4,17084.64,Normal weight,30-44
+c101091,42,female,north,36,3,yes,no,medium,standard,0,0,3,15724.95,Obese,30-44
+c101092,51,female,north,28,1,yes,yes,low,standard,0,2,3,21012.18,Overweight,45-59
+c101093,43,female,west,31,1,no,no,high,basic,0,0,2,3456.31,Obese,30-44
+c101094,52,male,south,25.1,0,yes,no,medium,premium,0,0,1,11151.26,Overweight,45-59
+c101095,41,female,south,29.1,0,no,no,high,basic,0,0,0,3403.16,Overweight,30-44
+c101096,43,female,north,28.9,1,no,no,high,standard,0,0,3,5231.73,Overweight,30-44
+c101097,18,male,west,18.3,3,no,no,low,standard,0,0,0,5275.21,Underweight,18-29
+c101098,54,female,west,36.9,1,no,no,medium,premium,0,0,2,10162.29,Obese,45-59
+c101099,47,male,east,33.5,0,no,no,low,basic,0,0,2,8092.73,Obese,45-59
