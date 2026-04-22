@@ -15,17 +15,6 @@ Projektet använder datasetet `insurance_costs.csv`, som finns i `data/raw/`.
 - `output/` innehåller figurer, tabeller och modeller
 - `report/` innehåller rapporten
 
-## Körordning
-
-Kör skripten i följande ordning:
-
-1. `scripts/00_setup.R`
-2. `scripts/01_data_understanding.R`
-3. `scripts/02_data_cleaning.R`
-4. `scripts/03_descriptive_analysis.R`
-5. `scripts/04_regression_analysis.R`
-6. `scripts/05_export_results.R`
-
 ## Paket
 
 Projektet använder bland annat följande paket:
@@ -59,4 +48,4 @@ Analysen kan köras på två sätt:
 6. `scripts/05_export_results.R`
 
 ### Alternativ 2: kör hela analysen direkt
-Kör filen `run_all.R`, som använder `source()` för att köra alla steg i rätt ordning.
+Kör filen `run_all.R`, som använder `source()` för att köra alla steg i rätt ordning, renderar rapporten och öppnar den färdiga HTML-rapporten.
