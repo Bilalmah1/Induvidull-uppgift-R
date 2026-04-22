@@ -56,6 +56,7 @@ standardiserades också så att nivåerna
 blev konsekventa i hela datasetet.
 
 Två nya variabler skapades:
+
 - `bmi_category`
 - `age_group`
 
