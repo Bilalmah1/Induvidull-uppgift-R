@@ -3,20 +3,37 @@ title: "Insurance Cost Analysis"
 author: "Bilal"
 format: html
 execute:
-  echo: true
+  echo: false
   warning: false
   message: false
 ---
 
 # Syfte
 
-Syftet med denna analys är att undersöka vilka faktorer som verkar hänga ihop med försäkringskostnader (`charges`) och att utvärdera om en regressionsmodell kan användas som stöd för framtida prissättning.
+Syftet med denna analys är att undersöka 
+vilka faktorer som verkar hänga ihop med 
+försäkringskostnader (`charges`) och att 
+utvärdera om en regressionsmodell kan 
+användas som stöd för framtida 
+prissättning.
 
 # Data
 
-Datasetet innehåller 1100 observationer och 14 ursprungliga variabler. Exempel på variabler är ålder, kön, region, BMI, antal barn, rökning, kronisk sjukdom, motionsnivå, försäkringsplan, tidigare olyckor, tidigare claims, hälsokontroller och försäkringskostnad.
+Datasetet innehåller 1100 observationer 
+och 14 ursprungliga variabler. Exempel på
+variabler är ålder, kön, region, BMI, 
+antal barn, rökning, kronisk sjukdom, 
+motionsnivå, försäkringsplan, tidigare 
+olyckor, tidigare claims, hälsokontroller
+och försäkringskostnad.
 
-I den inledande datagranskningen identifierades saknade värden i bland annat BMI, motionsnivå och antal hälsokontroller. Datat innehöll även vissa inkonsekvenser i kategoriska variabler, vilket behövde städas innan analysen.
+I den inledande datagranskningen 
+identifierades saknade värden i bland 
+annat BMI, motionsnivå och antal 
+hälsokontroller. Datat innehöll även 
+vissa inkonsekvenser i kategoriska 
+variabler, vilket behövde städas innan 
+analysen.
 
 # Metod
 
@@ -28,23 +45,192 @@ Analysen genomfördes i flera steg:
 - beskrivande statistik och visualiseringar
 - regressionsanalys med två modellvarianter
 
-Saknade värden i `bmi` och `annual_checkups` ersattes med medianvärden. Saknade värden i `exercise_level` ersattes med kategorin `unknown`. Kategoriska variabler standardiserades till konsekventa nivåer.
+Saknade värden i `bmi` och 
+`annual_checkups` ersattes med 
+medianvärden. För `exercise_level`, som 
+beskriver träningsnivå, ersattes saknade 
+värden med kategorin `unknown` så att 
+observationerna kunde behållas i 
+analysen. Kategoriska variabler 
+standardiserades också så att nivåerna 
+blev konsekventa i hela datasetet.
 
 Två nya variabler skapades:
 - `bmi_category`
 - `age_group`
 
-Dessa variabler skapades för att göra analysen mer lättolkad och för att bättre kunna beskriva skillnader mellan grupper.
+Dessa variabler skapades för att göra 
+analysen mer lättolkad och för att bättre
+kunna beskriva skillnader mellan grupper.
+
 
 # Resultat från beskrivande analys
 
 ```{r}
 source(here::here("scripts", "00_setup.R"))
 
-charges_summary <- readr::read_csv(here::here("output", "tables", "charges_summary.csv"), show_col_types = FALSE)
-charges_by_smoker <- readr::read_csv(here::here("output", "tables", "charges_by_smoker.csv"), show_col_types = FALSE)
-charges_by_plan <- readr::read_csv(here::here("output", "tables", "charges_by_plan.csv"), show_col_types = FALSE)
+charges_summary <- readr::read_csv(
+  here::here("output", "tables", "charges_summary.csv"),
+  show_col_types = FALSE
+)
 
-charges_summary
-charges_by_smoker
-charges_by_plan
+charges_by_smoker <- readr::read_csv(
+  here::here("output", "tables", "charges_by_smoker.csv"),
+  show_col_types = FALSE
+)
+
+charges_by_plan <- readr::read_csv(
+  here::here("output", "tables", "charges_by_plan.csv"),
+  show_col_types = FALSE
+)
+
+charges_summary_sv <- charges_summary %>%
+  rename(
+    "Medelkostnad" = mean_charges,
+    "Mediankostnad" = median_charges,
+    "Minimikostnad" = min_charges,
+    "Maximikostnad" = max_charges,
+    "Standardavvikelse" = sd_charges
+  )
+
+charges_by_smoker_sv <- charges_by_smoker %>%
+  rename(
+    "Rökning" = smoker,
+    "Antal" = count,
+    "Medelkostnad" = mean_charges,
+    "Mediankostnad" = median_charges
+  )
+
+charges_by_plan_sv <- charges_by_plan %>%
+  rename(
+    "Försäkringsplan" = plan_type,
+    "Antal" = count,
+    "Medelkostnad" = mean_charges,
+    "Mediankostnad" = median_charges
+  )
+
+knitr::kable(charges_summary_sv, caption = "Sammanfattning av försäkringskostnader")
+knitr::kable(charges_by_smoker_sv, caption = "Försäkringskostnader efter rökstatus")
+knitr::kable(charges_by_plan_sv, caption = "Försäkringskostnader efter försäkringsplan")
+```
+
+De beskrivande resultaten visar att den 
+genomsnittliga försäkringskostnaden 
+ligger runt 10 060, medan medianen är 
+cirka 9 124. Det tyder på att kostnaderna
+inte är helt jämnt fördelade.
+
+Rökare har tydligt högre genomsnittliga 
+kostnader än icke-rökare. Även 
+försäkringsplan verkar ha betydelse, där 
+premium-planen i genomsnitt har högre 
+kostnader än basic-planen.
+
+
+# Regressionsanalys
+
+```{r}
+model_comparison <- readr::read_csv(
+  here::here("output", "tables", "model_comparison.csv"),
+  show_col_types = FALSE
+)
+
+model_2_coefficients <- readr::read_csv(
+  here::here("output", "tables", "model_2_coefficients.csv"),
+  show_col_types = FALSE
+)
+
+knitr::kable(model_comparison, caption = "Jämförelse mellan regressionsmodeller")
+knitr::kable(head(model_2_coefficients, 10), caption = "Urval av koefficienter från modell 2")
+```
+
+Två regressionsmodeller jämfördes i 
+analysen. Den enklare modellen innehöll 
+endast ålder, BMI och antal barn, medan 
+den utökade modellen även inkluderade 
+rökning, kronisk sjukdom, motionsnivå, 
+tidigare claims, tidigare olyckor och 
+försäkringsplan.
+
+Den utökade modellen fungerade tydligt 
+bättre än den enklare modellen. 
+Resultaten visar att särskilt rökning, 
+kronisk sjukdom, högre BMI, högre ålder 
+samt tidigare claims och olyckor verkar 
+ha starka samband med 
+försäkringskostnaderna.
+
+Detta tyder på att modell 2 är mer 
+användbar som beslutsstöd, eftersom den 
+fångar en betydligt större del av 
+variationen i kostnaderna.
+
+# Slutsatser
+
+Analysen visar att försäkringskostnaderna
+främst verkar hänga ihop med:
+
+- rökning
+- kronisk sjukdom
+- högre BMI
+- högre ålder
+- tidigare claims
+- tidigare olyckor
+- val av försäkringsplan
+
+Den beskrivande analysen visade tydliga 
+skillnader mellan olika grupper, särskilt
+mellan rökare och icke-rökare. 
+Regressionsanalysen visade också att den 
+utökade modellen fungerade mycket bättre 
+än den enklare modellen, vilket tyder på 
+att flera variabler tillsammans behövs 
+för att bättre förklara variationen i 
+kostnader.
+
+Modellen visar därför att vissa 
+hälsorelaterade och historiska faktorer 
+verkar ha tydliga samband med 
+försäkringskostnader och kan vara 
+relevanta som stöd i framtida 
+prissättning.
+
+# Begränsningar
+
+Analysen har flera begränsningar:
+
+- analysen visar samband men inte säkra orsakssamband
+- saknade värden har hanterats med relativt enkla metoder
+- kategorin `unknown` för träningsnivå är en praktisk lösning men beskriver inte en faktisk träningsnivå
+- modellen bygger endast på det tillgängliga datasetet
+- det kan finnas andra viktiga faktorer som inte finns med i datat
+- resultaten kan därför inte utan vidare generaliseras till alla situationer
+
+# Avslutning
+
+Arbetet ger en tydlig överblick över 
+vilka faktorer som verkar vara viktigast 
+för försäkringskostnaderna i datasetet. 
+Analysen fungerar som en bra grund för 
+vidare undersökningar och visar hur R kan
+användas för att genomföra en 
+strukturerad statistisk analys från 
+datastädning till modellering och 
+tolkning.
+
+# Självreflektion
+
+Det jag tycker att jag gjorde bra i 
+uppgiften var att jag strukturerade 
+arbetet tydligt och genomförde hela 
+processen från datainläsning och 
+datastädning till visualisering och 
+regressionsanalys. Jag tycker också att 
+jag lyckades identifiera flera variabler 
+som verkar ha tydliga samband med 
+försäkringskostnader.
+
+Det svåraste var att städa datat, hantera
+saknade värden och få kategoriska 
+variabler konsekventa innan analysen 
+kunde genomföras på ett bra sätt.

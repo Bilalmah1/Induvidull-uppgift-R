@@ -90,15 +90,263 @@ ul.task-list li input[type="checkbox"] {
 <li>beskrivande statistik och visualiseringar</li>
 <li>regressionsanalys med två modellvarianter</li>
 </ul>
-<p>Saknade värden i <code>bmi</code> och <code>annual_checkups</code> ersattes med medianvärden. Saknade värden i <code>exercise_level</code> ersattes med kategorin <code>unknown</code>. Kategoriska variabler standardiserades till konsekventa nivåer.</p>
+<p>Saknade värden i <code>bmi</code> och <code>annual_checkups</code> ersattes med medianvärden. För <code>exercise_level</code>, som beskriver träningsnivå, ersattes saknade värden med kategorin <code>unknown</code> så att observationerna kunde behållas i analysen. Kategoriska variabler standardiserades också så att nivåerna blev konsekventa i hela datasetet.</p>
 <p>Två nya variabler skapades: - <code>bmi_category</code> - <code>age_group</code></p>
 <p>Dessa variabler skapades för att göra analysen mer lättolkad och för att bättre kunna beskriva skillnader mellan grupper.</p>
 </section>
 <section id="resultat-från-beskrivande-analys" class="level1">
 <h1>Resultat från beskrivande analys</h1>
-<p>source(here::here(“scripts”, “00_setup.R”))</p>
-<p>charges_summary &lt;- readr::read_csv(here::here(“output”, “tables”, “charges_summary.csv”), show_col_types = FALSE) charges_by_smoker &lt;- readr::read_csv(here::here(“output”, “tables”, “charges_by_smoker.csv”), show_col_types = FALSE) charges_by_plan &lt;- readr::read_csv(here::here(“output”, “tables”, “charges_by_plan.csv”), show_col_types = FALSE)</p>
-<p>charges_summary charges_by_smoker charges_by_plan</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Sammanfattning av försäkringskostnader</caption>
+<colgroup>
+<col style="width: 17%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 24%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Medelkostnad</th>
+<th style="text-align: right;">Mediankostnad</th>
+<th style="text-align: right;">Minimikostnad</th>
+<th style="text-align: right;">Maximikostnad</th>
+<th style="text-align: right;">Standardavvikelse</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">10060.49</td>
+<td style="text-align: right;">9124.31</td>
+<td style="text-align: right;">1203.51</td>
+<td style="text-align: right;">32559.28</td>
+<td style="text-align: right;">4574.455</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Försäkringskostnader efter rökstatus</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Rökning</th>
+<th style="text-align: right;">Antal</th>
+<th style="text-align: right;">Medelkostnad</th>
+<th style="text-align: right;">Mediankostnad</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">no</td>
+<td style="text-align: right;">896</td>
+<td style="text-align: right;">8585.889</td>
+<td style="text-align: right;">8232.13</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">yes</td>
+<td style="text-align: right;">204</td>
+<td style="text-align: right;">16537.147</td>
+<td style="text-align: right;">16391.69</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Försäkringskostnader efter försäkringsplan</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Försäkringsplan</th>
+<th style="text-align: right;">Antal</th>
+<th style="text-align: right;">Medelkostnad</th>
+<th style="text-align: right;">Mediankostnad</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">basic</td>
+<td style="text-align: right;">339</td>
+<td style="text-align: right;">9061.799</td>
+<td style="text-align: right;">8092.73</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">premium</td>
+<td style="text-align: right;">208</td>
+<td style="text-align: right;">11244.051</td>
+<td style="text-align: right;">10341.69</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">standard</td>
+<td style="text-align: right;">553</td>
+<td style="text-align: right;">10227.527</td>
+<td style="text-align: right;">9131.85</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>De beskrivande resultaten visar att den genomsnittliga försäkringskostnaden ligger runt 10 060, medan medianen är cirka 9 124. Det tyder på att kostnaderna inte är helt jämnt fördelade.</p>
+<p>Rökare har tydligt högre genomsnittliga kostnader än icke-rökare. Även försäkringsplan verkar ha betydelse, där premium-planen i genomsnitt har högre kostnader än basic-planen.</p>
+</section>
+<section id="regressionsanalys" class="level1">
+<h1>Regressionsanalys</h1>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Jämförelse mellan regressionsmodeller</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">model</th>
+<th style="text-align: right;">r_squared</th>
+<th style="text-align: right;">adjusted_r_squared</th>
+<th style="text-align: right;">aic</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Model 1</td>
+<td style="text-align: right;">0.0860895</td>
+<td style="text-align: right;">0.0835879</td>
+<td style="text-align: right;">21573.77</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Model 2</td>
+<td style="text-align: right;">0.7470672</td>
+<td style="text-align: right;">0.7442749</td>
+<td style="text-align: right;">20178.70</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Urval av koefficienter från modell 2</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">term</th>
+<th style="text-align: right;">estimate</th>
+<th style="text-align: right;">std.error</th>
+<th style="text-align: right;">statistic</th>
+<th style="text-align: right;">p.value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">(Intercept)</td>
+<td style="text-align: right;">-1458.81523</td>
+<td style="text-align: right;">508.88723</td>
+<td style="text-align: right;">-2.866677</td>
+<td style="text-align: right;">0.0042281</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">age</td>
+<td style="text-align: right;">68.74511</td>
+<td style="text-align: right;">5.73987</td>
+<td style="text-align: right;">11.976771</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">bmi</td>
+<td style="text-align: right;">158.48058</td>
+<td style="text-align: right;">15.55474</td>
+<td style="text-align: right;">10.188572</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">children</td>
+<td style="text-align: right;">77.55317</td>
+<td style="text-align: right;">47.60106</td>
+<td style="text-align: right;">1.629232</td>
+<td style="text-align: right;">0.1035537</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">smokeryes</td>
+<td style="text-align: right;">7413.37074</td>
+<td style="text-align: right;">182.70073</td>
+<td style="text-align: right;">40.576580</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">chronic_conditionyes</td>
+<td style="text-align: right;">3816.90196</td>
+<td style="text-align: right;">166.07654</td>
+<td style="text-align: right;">22.982789</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">exercise_levellow</td>
+<td style="text-align: right;">1492.15004</td>
+<td style="text-align: right;">210.17997</td>
+<td style="text-align: right;">7.099392</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">exercise_levelmedium</td>
+<td style="text-align: right;">513.39215</td>
+<td style="text-align: right;">188.70621</td>
+<td style="text-align: right;">2.720589</td>
+<td style="text-align: right;">0.0066206</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">exercise_levelunknown</td>
+<td style="text-align: right;">711.58427</td>
+<td style="text-align: right;">520.68792</td>
+<td style="text-align: right;">1.366623</td>
+<td style="text-align: right;">0.1720260</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">prior_claims</td>
+<td style="text-align: right;">890.16932</td>
+<td style="text-align: right;">136.23037</td>
+<td style="text-align: right;">6.534294</td>
+<td style="text-align: right;">0.0000000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Två regressionsmodeller jämfördes i analysen. Den enklare modellen innehöll endast ålder, BMI och antal barn, medan den utökade modellen även inkluderade rökning, kronisk sjukdom, motionsnivå, tidigare claims, tidigare olyckor och försäkringsplan.</p>
+<p>Den utökade modellen fungerade tydligt bättre än den enklare modellen. Resultaten visar att särskilt rökning, kronisk sjukdom, högre BMI, högre ålder samt tidigare claims och olyckor verkar ha starka samband med försäkringskostnaderna.</p>
+<p>Detta tyder på att modell 2 är mer användbar som beslutsstöd, eftersom den fångar en betydligt större del av variationen i kostnaderna.</p>
+</section>
+<section id="slutsatser" class="level1">
+<h1>Slutsatser</h1>
+<p>Analysen visar att försäkringskostnaderna främst verkar hänga ihop med:</p>
+<ul>
+<li>rökning</li>
+<li>kronisk sjukdom</li>
+<li>högre BMI</li>
+<li>högre ålder</li>
+<li>tidigare claims</li>
+<li>tidigare olyckor</li>
+<li>val av försäkringsplan</li>
+</ul>
+<p>Den beskrivande analysen visade tydliga skillnader mellan olika grupper, särskilt mellan rökare och icke-rökare. Regressionsanalysen visade också att den utökade modellen fungerade mycket bättre än den enklare modellen, vilket tyder på att flera variabler tillsammans behövs för att bättre förklara variationen i kostnader.</p>
+<p>Modellen visar därför att vissa hälsorelaterade och historiska faktorer verkar ha tydliga samband med försäkringskostnader och kan vara relevanta som stöd i framtida prissättning.</p>
+</section>
+<section id="begränsningar" class="level1">
+<h1>Begränsningar</h1>
+<p>Analysen har flera begränsningar:</p>
+<ul>
+<li>analysen visar samband men inte säkra orsakssamband</li>
+<li>saknade värden har hanterats med relativt enkla metoder</li>
+<li>kategorin <code>unknown</code> för träningsnivå är en praktisk lösning men beskriver inte en faktisk träningsnivå</li>
+<li>modellen bygger endast på det tillgängliga datasetet</li>
+<li>det kan finnas andra viktiga faktorer som inte finns med i datat</li>
+<li>resultaten kan därför inte utan vidare generaliseras till alla situationer</li>
+</ul>
+</section>
+<section id="avslutning" class="level1">
+<h1>Avslutning</h1>
+<p>Arbetet ger en tydlig överblick över vilka faktorer som verkar vara viktigast för försäkringskostnaderna i datasetet. Analysen fungerar som en bra grund för vidare undersökningar och visar hur R kan användas för att genomföra en strukturerad statistisk analys från datastädning till modellering och tolkning.</p>
+</section>
+<section id="självreflektion" class="level1">
+<h1>Självreflektion</h1>
+<p>Det jag tycker att jag gjorde bra i uppgiften var att jag strukturerade arbetet tydligt och genomförde hela processen från datainläsning och datastädning till visualisering och regressionsanalys. Jag tycker också att jag lyckades identifiera flera variabler som verkar ha tydliga samband med försäkringskostnader.</p>
+<p>Det svåraste var att städa datat, hantera saknade värden och få kategoriska variabler konsekventa innan analysen kunde genomföras på ett bra sätt.</p>
 </section>
 
 </main>
